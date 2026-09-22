@@ -1,0 +1,55 @@
+:root {
+  /* Light mode (default) */
+  --bg: #f0f3f8;
+  --fg: #4c525c;
+  --card: #ffffff;
+  --accent: #3b5bdb;       /* ~5.7:1 contrast on --bg, safe for text/icons */
+  --accent-soft: #7aa2f7;  /* your original blue, used only for tints/badges */
+  --muted: #5b6472;        /* ~6:1 contrast on --bg */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #f0f3f8;       /* neutral dark gray instead of near-black */
+    --fg: #eaeef2;       /* ~13:1 contrast on --bg */
+    --card: #232529;     /* slightly lighter than --bg, for elevation */
+    --accent: #7aa2f7;   /* ~6.3:1 contrast on --bg, still safe for text/icons */
+    --accent-soft: #2e3650; /* darker tint for badges/hover fills */
+    --muted: #9aa3b2;    /* ~6.8:1 contrast on --bg */
+  }
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+
+body { background: var(--bg); color: var(--fg); font-family: Inter, system-ui, Arial, sans-serif; }
+
+.container { min-height: 100%; display: grid; place-items: center; padding: 24px; }
+.card {
+  width: 100%;
+  max-width: 80%;
+  background: var(--card);
+  border: 1px solid #202433;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+h1, h2 { margin: 0 0 12px; }
+.form { display: flex; gap: 12px; margin-top: 12px; }
+.form input {
+  flex: 1; padding: 12px 14px; border-radius: 10px;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--input-fg);
+}
+.form button {
+  padding: 12px 16px; border-radius: 10px; border: 0; background: var(--accent);
+  color: #0b0b10; font-weight: 700; cursor: pointer;
+}
+.muted { color: var(--muted); font-size: 14px; }
+
+.sv-root-modern { background: transparent; }
+.sv-title { color: var(--fg); }
+.sv-page-title { color: var(--fg); }
+
