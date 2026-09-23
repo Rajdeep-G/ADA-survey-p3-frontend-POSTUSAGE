@@ -163,7 +163,7 @@ export default function SurveyPage() {
     return (
       <div className="container">
         <div className="card">
-          <h2>Study on Understanding User Perceptions of a Data Dashboard</h2>
+          <h2>Study on Understanding User Perceptions of a Data Dashboard [Post Usage]</h2>
           <p className="muted">
             ID: <b>{uid}</b>
           </p>
@@ -180,7 +180,7 @@ export default function SurveyPage() {
     <div className="card survey-card">
     {/* <div className="container">
       <div className="card"> */}
-        <h2>Study on Understanding User Perceptions of Data Dashboard</h2>
+        <h2>Study on Understanding User Perceptions of Data Dashboard [Post Usage]</h2>
         <Survey model={model} />
       </div>
     </div>

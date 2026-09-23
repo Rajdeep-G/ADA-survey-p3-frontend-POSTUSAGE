@@ -50,11 +50,59 @@ export default function Landing() {
         </h1>
         <p className="l-salutation">Dear Participant,</p>
 
-        
+        <div className="l-section">
+          {/* <span className="l-eyebrow">Welcome Back</span> */}
+          <p>
+            Thank you for returning to complete the final part of this study. This survey marks the concluding stage of our multi-part research on how users like yourself understand, interpret, and manage their Google “My Activity” data with the help of the ADA extension.
+
+          </p>
+        </div>
+
+        {/* ── Recap ── */}
+        <div className="l-section">
+          {/* <span className="l-eyebrow">A Quick Recap</span> */}
+          <p>
+            Earlier, in Part-1 (Pre-usage survey), you shared your initial perceptions about Google-collected activity data, and then you installed the ADA browser extension and used it for a period of (atleast) 7 days. During this time, ADA helped you view your Google Activity entries in a personalized dashboard and offered privacy-focused actions such as reviewing and deleting specific activity items on your personal device.
+
+          </p>
+        </div>
+
+        {/* ── Goal ── */}
+        <div className="l-section">
+          {/* <span className="l-eyebrow">Study Goal</span> */}
+          <p>
+            The goal of this final survey is to understand your overall experience using ADA, how (if at all) your perceptions and comfort related to your Google Activity data have changed over the week, and whether ADA influenced your awareness, privacy habits, or sense of control over your digital trace.
+          </p>
+        </div>
+
+        {/* ── Defining Sensitive — signature callout ── */}
+        <div className="l-callout">
+          <span className="l-eyebrow">Defining "Sensitive"</span>
+          <p>
+            Throughout this survey, we will again use the word "sensitive" to
+            refer to sensitive personal information — information people
+            generally prefer to keep private. Examples may include personal
+            data revealing religious or political views, sexual orientation,
+            location patterns, financial transactions, health-related
+            information, personal relationships, or any information that may
+            cause discomfort or harm if misused or accessed without consent.
+          </p>
+        </div>
+
+        {/* ── Instructions ── */}
+        <div className="l-section">
+          {/* <span className="l-eyebrow">Instructions</span> */}
+          <p>
+
+            Please answer the questions thoughtfully based on your experience
+            of using the extension over the past 7 days. This survey will
+            take approximately <strong>30 minutes</strong> to complete.
+          </p>
+        </div>
 
         <hr className="l-divider" />
 
-       
+
         {/* ── Consent ── */}
         <div className="l-section">
           <span className="l-eyebrow">Consent</span>
@@ -98,7 +146,7 @@ export default function Landing() {
               >
                 here
               </a>
-              
+
             </p>
           )}
         </div>

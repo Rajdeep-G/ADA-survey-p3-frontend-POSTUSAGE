@@ -8,23 +8,372 @@
   "pages": [
     {
       "name": "A1",
-      "title": "Google Account and Service Usage",
+      "title": "Introduction",
       "elements": [
         {
           "type": "html",
           "name": "A1_T1",
-          "html": "<p>In this section, we'd like to understand which Google services you use and how you typically access your Google Account across different devices. There are no right or wrong answers — we're simply interested in your everyday habits.</p>"
+          "html": "Please spend a few minutes exploring the tool before beginning the survey. Click the icon in your browser toolbar near the top-right corner of the browser window. Be sure to view all parts of the interface."
+        },
+        {
+          "type": "text",
+          "name": "A1_Q1",
+          "title": "Briefly describe (1-2 sentences), what do you think is the purpose of this tool?",
+          "required": true
+        },
+        {
+          "type": "text",
+          "name": "A1_Q2",
+          "title": "Please list the new information, if any, you learned by using this tool.",
+          "required": true
+        },
+        {
+          "type": "text",
+          "name": "A1_Q3",
+          "title": "Please list the information you already knew, if any, that the tool told you.",
+          "required": true
+        },
+        {
+          "type": "text",
+          "name": "A1_Q4",
+          "title": "Please list the surprising information, if any, that the tool told you.",
+          "required": true
+        },
+        {
+          "type": "text",
+          "name": "A1_Q5",
+          "title": "What questions, if any, do you have about what you saw in the tool?",
+          "required": true
         }
       ]
     },
     {
       "name": "A2",
-      "title": "Background Knowledge of Google My Activity Dashboard",
+      "title": "Experience of using the extension [ADA-specific]",
       "elements": [
         {
           "type": "html",
-          "name": "A2_intro_MyActivity",
-          "html": "<p>In the following section, we will ask you some general questions to learn more about your knowledge of the Google “My Activity” dashboard. </p><p>The Google “My Activity” dashboard is a service provided by Google that allows users to view, manage, and delete the activity data collected from their use of various Google services (such as Search, YouTube, Maps, Chrome, and more). “My Activity” organizes your past activity in a timeline and gives you control over what data is stored in your Google Account.</p><ul> <li>You can access the Google “My Activity” dashboard by visiting <a href='https://myactivity.google.com/' target='_blank'>https://myactivity.google.com/</a> while signed into your Google Account.</li> <li>You can also find it by going to your Google Account → Data & Privacy → History settings → My Activity.</li><li>“My Activity” allows you to view activity by date, Google product, and category. You can also delete specific items, delete activity in bulk, or turn on auto-delete for future activity.</li></ul>You can learn more about the Google “My Activity” dashboard from the official help page: <a href='https://support.google.com/accounts/answer/7028918' target='_blank'>Click here</a>"
+          "name": "A2_T1",
+          "html": "<p>Next we would like to understand your thoughts, awareness, and comfort around Google Activity data after using our designed personalised dashboard (ADA) for a week.</p>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q1",
+          "title": "Compared to before your weeklong usage of ADA, how would you describe your overall awareness of what Google stores about your activity?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Much lower",
+            "Slightly lower",
+            "No change",
+            "Slightly higher",
+            "Much higher"
+          ]
+        },
+
+        {
+          "type": "html",
+          "name": "A2_T2",
+"html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Please rate your agreement with each statement below, grouped into three areas:</p><div style=\"display:flex; gap:10px; margin-bottom:12px;\"><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">System Quality</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Ease of Use &amp; Interaction Experience</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Perceived Usefulness</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\">On a scale of 1 to 5, where <strong>1</strong> indicates &ldquo;Strongly disagree&rdquo; and <strong>5</strong> indicates &ldquo;Strongly agree.&rdquo;</p></div>"
+
+        },
+        {
+          "type": "matrix",
+          "name": "A2_Q2",
+          "title": "System Quality (Data, Recommendations & Clarity)",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "60%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": 1, "text": "1 (Strongly disagree)" },
+            { "value": 2, "text": "2" },
+            { "value": 3, "text": "3" },
+            { "value": 4, "text": "4" },
+            { "value": 5, "text": "5 (Strongly agree)" }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q2_1_accurate",
+              "text": "The activity information shown in ADA regarding my activities felt accurate."
+            },
+            {
+              "value": "A2_Q2_2_reliable",
+              "text": "The activity information shown in ADA regarding my activities felt reliable."
+            },
+            {
+              "value": "A2_Q2_3_matches_idea",
+              "text": "The activity information provided by the extension matches my idea of how sensitive my browser interactions are."
+            },
+            {
+              "value": "A2_Q2_4_understand_marking",
+              "text": "I understand why ADA marked certain entries as more sensitive than the others."
+            }
+          ]
+        },
+
+        {
+          "type": "matrix",
+          "name": "A2_Q3",
+          "title": "Ease of Use & Interaction Experience",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "60%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": 1, "text": "1 (Strongly disagree)" },
+            { "value": 2, "text": "2" },
+            { "value": 3, "text": "3" },
+            { "value": 4, "text": "4" },
+            { "value": 5, "text": "5 (Strongly agree)" }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q3_1_easy_navigate",
+              "text": "The extension is easy to navigate."
+            },
+            {
+              "value": "A2_Q3_2_easy_interact",
+              "text": "The extension is easy to interact with."
+            },
+            {
+              "value": "A2_Q3_3_easy_understand_info",
+              "text": "The activity information provided by the extension is easy for me to understand."
+            },
+            {
+              "value": "A2_Q3_4_easy_understand_order",
+              "text": "The order in which the recommendations are presented by the browser is easy for me to understand."
+            },
+            {
+              "value": "A2_Q3_5_overall_easy",
+              "text": "The extension was overall presented in a way that was easy for me to understand."
+            }
+          ]
+        },
+
+        {
+          "type": "matrix",
+          "name": "A2_Q4",
+          "title": "Perceived Usefulness",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "60%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": 1, "text": "1 (Strongly disagree)" },
+            { "value": 2, "text": "2" },
+            { "value": 3, "text": "3" },
+            { "value": 4, "text": "4" },
+            { "value": 5, "text": "5 (Strongly agree)" }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q4_1_quick_sensitivity",
+              "text": "ADA helped me understand the potential 'sensitivity' of my data quickly."
+            },
+            {
+              "value": "A2_Q4_2_noticed_unaware",
+              "text": "ADA helped me notice things about my Google activity that I was not aware of before."
+            },
+            {
+              "value": "A2_Q4_3_manage_data",
+              "text": "Using this extension would help me better manage my browsing data."
+            },
+            {
+              "value": "A2_Q4_4_remove_sensitive",
+              "text": "Using this extension would improve to remove sensitive data from being shipped to google."
+            },
+            {
+              "value": "A2_Q4_5_open_to_using",
+              "text": "I would be open to using this extension in my day-to-day life."
+            },
+            {
+              "value": "A2_Q4_6_trust_dashboard",
+              "text": "I trust the personalized dashboard provided by the system."
+            },
+            {
+              "value": "A2_Q4_7_helps_decide_delete",
+              "text": "The personalized dashboard helps me decide which activities to delete."
+            }
+          ]
+        },
+
+        {
+          "type": "matrix",
+          "name": "A2_Q5",
+          "title": "Privacy & Trust",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "60%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": 1, "text": "1 (Strongly disagree)" },
+            { "value": 2, "text": "2" },
+            { "value": 3, "text": "3" },
+            { "value": 4, "text": "4" },
+            { "value": 5, "text": "5 (Strongly agree)" }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q5_1_handled_privately",
+              "text": "I trust that ADA handled all my data privately on my device."
+            },
+            {
+              "value": "A2_Q5_2_felt_safe",
+              "text": "Knowing my data never left my device made me feel safe using ADA."
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "AC_2",
+          "title": "Please select \"Disagree\" for this statement so that we know you are reading carefully.",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Strongly agree",
+            "Agree",
+            "Neither agree nor disagree",
+            "Disagree",
+            "Strongly disagree"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q6",
+          "title": "How did you feel using ADA by the end of the 7-day period?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Very comfortable",
+            "Slightly comfortable",
+            "Neither comfortable nor uncomfortable",
+            "Slightly uncomfortable",
+            "Very uncomfortable"
+          ]
+        },
+
+        {
+          "type": "html",
+          "name": "A2_T3",
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Over the past week, ADA ranked and re-ordered your activity items. Thinking about how the tool <strong>ordered your activity items</strong> — please rate your agreement with each statement below, grouped into three areas:</p><div style=\"display:flex; gap:10px; margin-bottom:12px;\"><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Agreement</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Stability</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Trust and responsiveness</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\"><strong>Answer choices for all questions in this section:</strong> Strongly agree &middot; Agree &middot; Neither agree nor disagree &middot; Disagree &middot; Strongly disagree</p></div>"
+
+
+
+        },
+        {
+          "type": "matrix",
+          "name": "A2_Q7",
+          "title": "Agreement",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "60%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": "strongly_agree", "text": "Strongly agree" },
+            { "value": "agree", "text": "Agree" },
+            { "value": "neither", "text": "Neither agree nor disagree" },
+            { "value": "disagree", "text": "Disagree" },
+            { "value": "strongly_disagree", "text": "Strongly disagree" }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q7_1_top_items_sensitive",
+              "text": "The items the tool put at the top were the ones I also consider most sensitive."
+            },
+            {
+              "value": "A2_Q7_2_ordering_reflected_me",
+              "text": "The tool's ordering of the activity items reflected what matters to me personally."
+            },
+            {
+              "value": "A2_Q7_3_ordering_same_for_anyone",
+              "text": "The tool's ordering of the activity items seemed like it would be the same for anyone."
+            }
+          ]
+        },
+
+
+        {
+          "type": "matrix",
+          "name": "A2_Q8",
+          "title": "Stability",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "60%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": "strongly_agree", "text": "Strongly agree" },
+            { "value": "agree", "text": "Agree" },
+            { "value": "neither", "text": "Neither agree nor disagree" },
+            { "value": "disagree", "text": "Disagree" },
+            { "value": "strongly_disagree", "text": "Strongly disagree" }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q8_1_consistent_ordering",
+              "text": "The tool's ordering of the activity items stayed consistent over the week."
+            },
+            {
+              "value": "A2_Q8_2_changes_made_sense",
+              "text": "When the ordering of the activity items changed, the changes made sense to me."
+            },
+            {
+              "value": "A2_Q8_3_changed_too_often",
+              "text": "The ordering of the activity items changed more often than I would have liked."
+            }
+          ]
+        },
+
+
+        {
+          "type": "matrix",
+          "name": "A2_Q9",
+          "title": "Trust and responsiveness",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "60%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": "strongly_agree", "text": "Strongly agree" },
+            { "value": "agree", "text": "Agree" },
+            { "value": "neither", "text": "Neither agree nor disagree" },
+            { "value": "disagree", "text": "Disagree" },
+            { "value": "strongly_disagree", "text": "Strongly disagree" }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q9_1_adjusted_over_time",
+              "text": "The tool seemed to adjust to me (became more personalised) over the course of the week."
+            },
+            {
+              "value": "A2_Q9_2_predictable",
+              "text": "I could predict how the tool would treat a new item of my activity."
+            }
+          ]
+        },
+
+        {
+          "type": "radiogroup",
+          "name": "A2_Q10",
+          "title": "Did you notice the tool's ordering change at any point during the week?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": ["Yes", "No", "Not sure"]
+        },
+        {
+          "type": "comment",
+          "name": "A2_Q10_B1",
+          "title": "In your own words, what changed, and what did you make of it?",
+          "isRequired": false,
+          "rows": 3,
+          "visibleIf": "{A2_Q10} = 'Yes'"
         }
       ]
     },
