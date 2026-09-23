@@ -11,12 +11,11 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      '/survey/check':       'http://localhost:8000',
-      '/survey/start':       'http://localhost:8000',
-      '/survey/progress':    'http://localhost:8000',
-      '/survey/verify-code': 'http://localhost:8000',
-      '/survey/submit':      'http://localhost:8000',
-      '/healthz':            'http://localhost:8000',
+      '/survey_post/check': 'http://localhost:8000',
+      '/survey_post/start': 'http://localhost:8000',
+      '/survey_post/progress': 'http://localhost:8000',
+      '/survey_post/submit': 'http://localhost:8000',
+      '/healthz': 'http://localhost:8000',
     }
 
 

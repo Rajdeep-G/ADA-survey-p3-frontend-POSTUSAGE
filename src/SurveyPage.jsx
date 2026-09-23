@@ -4,7 +4,7 @@ import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import "./SurveyPage.css";
 import "survey-core/survey-core.min.css";
-import { submitSurvey, saveProgress, verifyCode, checkUidExists } from "./Api";
+import { submitSurveyPost, saveProgressPost, checkUidExistsPost } from "./Api";
 
 // ── Which survey.json page names count as subsection completions ─────────────
 // Order matters: index+1 = subsection number.
@@ -37,7 +37,7 @@ export default function SurveyPage() {
     (async () => {
       try {
         // Guard: redirect if already completed
-        const alreadyDone = await checkUidExists(uid);
+        const alreadyDone = await checkUidExistsPost(uid);
         if (alreadyDone) {
           alert(
             "Our records show that you have already completed this survey. Thank you!",
@@ -82,7 +82,7 @@ export default function SurveyPage() {
         savedSubsections.add(prevPage);
         const subsectionIndex = SUBSECTION_PAGES.indexOf(prevPage);
         try {
-          await saveProgress(uid, prevPage, sender.data);
+          await saveProgressPost(uid, prevPage, sender.data);
           // Also persist to localStorage as backup
           localStorage.setItem(
             `survey_progress_${uid}`,
@@ -108,70 +108,7 @@ export default function SurveyPage() {
       const btn = el.querySelector('button[id$="-btn"]');
       if (btn) btn.onclick = () => sender.nextPage();
 
-      // Make A2_Q8 description a clickable link
-      // if (options.question?.name === "A2_Q8") {
-      //   const desc = el.querySelector(".sd-question__description");
-      //   if (desc) {
-      //     desc.innerHTML =
-      //       'To know more about what you can do with "My Activity", you may check: ' +
-      //       "<a href='https://support.google.com/accounts/answer/7028918' target='_blank'>" +
-      //       "support.google.com/accounts/answer/7028918</a>";
-      //   }
-      // }
-
-      // ── ADA code input (A6_Q3): force uppercase as user types ────────────────
-      m.onAfterRenderQuestion.add((sender, options) => {
-        if (options.question?.name !== "A6_Q3") return;
-        const input = options?.htmlElement?.querySelector("input");
-        if (!input) return;
-        input.addEventListener("input", () => {
-          input.value = input.value.toUpperCase();
-        });
-      });
-
-      // ── Verify code against server when leaving the page (on Next click) ─────
-      m.onServerValidateQuestions.add(async (sender, options) => {
-        const onCodePage = sender.currentPage?.questions?.some(
-          (q) => q.name === "A6_Q3",
-        );
-        if (!onCodePage) {
-          options.complete();
-          return;
-        }
-
-        const code = (options.data.A6_Q3 || "").trim().toUpperCase();
-
-        if (!/^[A-Z0-9]{6}$/.test(code)) {
-          options.complete();
-          return;
-        }
-
-        // Clear stale errors from previous attempts
-        sender.getQuestionByName("A6_Q3")?.clearErrors();
-
-        let errorMsg = null;
-        try {
-          const result = await verifyCode(uid, code);
-          if (result.ok) {
-            localStorage.setItem(`survey_ada_code_${uid}`, code);
-          } else {
-            errorMsg =
-              result.message ||
-              "Code not recognised. Please check the ADA extension and try again.";
-          }
-        } catch (e) {
-          errorMsg =
-            "Verification failed. Please check your connection and try again.";
-        }
-
-        // Single point of display — set only if there's an error
-        if (errorMsg) {
-          options.errors["A6_Q3"] = errorMsg;
-        }
-
-        options.complete();
-      });
-      // This actually blocks the Next button
+      
     });
 
     // ── Break page body class ─────────────────────────────────────────────────
@@ -187,13 +124,13 @@ export default function SurveyPage() {
     m.onComplete.add(async (sender, options) => {
       options.showSaveInProgress();
       try {
-        await submitSurvey({ uid, answers: sender.data });
+        await submitSurveyPost({ uid, answers: sender.data });
         localStorage.removeItem("survey_uid");
         localStorage.removeItem(`survey_progress_${uid}`);
         options.showSaveSuccess("Thanks! Your response has been recorded.");
       } catch (e) {
         console.error(e);
-        const exists = await checkUidExists(uid).catch(() => false);
+        const exists = await checkUidExistsPost(uid).catch(() => false);
         if (exists) {
           options.showSaveError(
             "Our records show you have already completed this survey. Thank you!",

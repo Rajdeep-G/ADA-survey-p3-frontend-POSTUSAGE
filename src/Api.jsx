@@ -22,10 +22,10 @@ async function _get(path) {
   return res.json();
 }
 
-// Landing: has this prolific_id already submitted?
-export async function checkUidExists(prolificId) {
+// Landing: has this prolific_id already submitted the post-usage survey?
+export async function checkUidExistsPost(prolificId) {
   try {
-    const data = await _get(`/survey/check?prolific_id=${encodeURIComponent(prolificId)}`);
+    const data = await _get(`/survey_post/check?prolific_id=${encodeURIComponent(prolificId)}`);
     return data.exists === true;
   } catch {
     // return false; // fail open — let them proceed
@@ -34,30 +34,22 @@ export async function checkUidExists(prolificId) {
 }
 
 // Landing: record participant arrival
-export async function startSurvey(prolificId) {
-  return _post("/survey/start", { prolific_id: prolificId });
+export async function startSurveyPost(prolificId) {
+  return _post("/survey_post/start", { prolific_id: prolificId });
 }
 
 // SurveyPage: save progress after each subsection
-export async function saveProgress(prolificId, subsection, answers) {
-  return _post("/survey/progress", {
+export async function saveProgressPost(prolificId, subsection, answers) {
+  return _post("/survey_post/progress", {
     prolific_id: prolificId,
     subsection,
     answers,
   });
 }
 
-// SurveyPage: verify ADA code after subsection 6
-export async function verifyCode(prolificId, code) {
-  return _post("/survey/verify-code", {
-    prolific_id: prolificId,
-    code,
-  });
-}
-
-// SurveyPage: final submission after subsection 9
-export async function submitSurvey({ uid, answers }) {
-  return _post("/survey/submit", {
+// SurveyPage: final submission after last subsection
+export async function submitSurveyPost({ uid, answers }) {
+  return _post("/survey_post/submit", {
     prolific_id: uid,
     answers,
   });
