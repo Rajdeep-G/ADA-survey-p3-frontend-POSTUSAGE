@@ -72,7 +72,126 @@
         {}
       ]
     },
-
+    {
+      "name": "A6",
+      "title": "Privacy, Personalization & Trade-offs",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A6_T1",
+          "html": "<p style=\"margin:0;\">This section helps us understand your broader attitudes towards privacy. Your responses will help us interpret why different users engaged with ADA differently.</p>"
+        },
+        {
+          "type": "matrix",
+          "name": "A6_Q1",
+          "title": "For each pair below, imagine you had to choose between Option A and Option B. Please indicate which you would choose.",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": "definitely_a",
+              "text": "Definitely A"
+            },
+            {
+              "value": "probably_a",
+              "text": "Probably A"
+            },
+            {
+              "value": "not_sure",
+              "text": "I'm not sure"
+            },
+            {
+              "value": "probably_b",
+              "text": "Probably B"
+            },
+            {
+              "value": "definitely_b",
+              "text": "Definitely B"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A6_Q1_1_free_vs_paid",
+              "text": "A: Free access to services, but your activity is stored indefinitely. B: A monthly fee, but no activity is stored."
+            },
+            {
+              "value": "A6_Q1_2_delete_vs_accuracy",
+              "text": "A: Your activity is deleted automatically after three months, but recommendations get worse. B: Your activity is kept forever, and recommendations stay accurate."
+            },
+            {
+              "value": "A6_Q1_3_personalization",
+              "text": "A: Your search results are not personalized, but nothing you search is stored. B: Your results are personalized, but everything you search is stored."
+            },
+            {
+              "value": "A6_Q1_4_who_labels_sensitive",
+              "text": "A: A company decides which of your activity is sensitive. B: You label which of your activity is sensitive yourself, but must do it manually."
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "name": "A6_T3",
+          "html": "<p style=\"margin:0 0 8px;\"> Now, we would like to understand your general preferences when it comes to balancing privacy, personalization, and convenience. Different people value these aspects differently, and there are no right or wrong responses.</p><p style=\"margin:0;\">Please indicate how much you agree or disagree with the following statements, on a scale of 1 to 5, where <strong>1</strong> indicates &ldquo;Strongly disagree&rdquo; and <strong>5</strong> indicates &ldquo;Strongly agree.&rdquo;</p>"
+        },
+        {
+          "type": "matrix",
+          "name": "A6_Q2",
+          "title": "Please rate your agreement with each statement.",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": 1,
+              "text": "1 (Strongly disagree)"
+            },
+            {
+              "value": 2,
+              "text": "2"
+            },
+            {
+              "value": 3,
+              "text": "3"
+            },
+            {
+              "value": 4,
+              "text": "4"
+            },
+            {
+              "value": 5,
+              "text": "5 (Strongly agree)"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A6_Q2_1_prefer_personalization_local",
+              "text": "I prefer a personalized system that adapts using user feedback, even if it requires processing more data locally on the device."
+            },
+            {
+              "value": "A6_Q2_2_prefer_less_personalization",
+              "text": "I prefer less personalization if it guarantees that none of my data leaves my device."
+            },
+            {
+              "value": "A6_Q2_3_trade_convenience_for_privacy",
+              "text": "I am willing to trade some convenience in exchange for stronger privacy protection."
+            },
+            {
+              "value": "A6_Q2_4_prefer_ada_over_google",
+              "text": "I would prefer using ADA's dashboard over Google's default My Activity dashboard to review and manage my online activity."
+            },
+            {
+              "value": "A6_Q2_5_use_regularly_if_clear_insights",
+              "text": "If a tool gives me clear insights about sensitive data, I am more likely to use it regularly, even if it requires some effort from my side."
+            }
+          ]
+        }
+      ]
+    },
     {
       "name": "A9",
       "title": "System Usability Scale",
@@ -81,7 +200,6 @@
           "type": "html",
           "name": "A9_T1",
           "html": "<p style=\"margin:0;\">You have now been using the ADA extension, referred to as the &ldquo;system&rdquo; below, for the past week. This section presents a set of general statements about your overall experience interacting with it. Drawing on your usage over this period, please select the answer choice that best describes your agreement or disagreement with each statement.</p>"
-
         },
         {
           "type": "matrix",
@@ -158,7 +276,88 @@
           ]
         }
       ]
+    },
+    {
+      "name": "A10",
+      "title": " IUIPC Awareness and Collection Subscales",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A10_T1",
+          "html": "<p>This section moves away from Google specifically and asks about your general views on how companies handle personal information online. There are no right or wrong answers — just tell us how much you agree or disagree with each statement below.</p>"
+        },
+        {
+          "type": "matrix",
+          "name": "A10_Q1",
+          "title": "Please indicate how much you agree or disagree with each of the following statements.",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "40%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": "strongly_agree",
+              "text": "Strongly agree"
+            },
+            {
+              "value": "agree",
+              "text": "Agree"
+            },
+            {
+              "value": "somewhat_agree",
+              "text": "Somewhat agree"
+            },
+            {
+              "value": "neutral",
+              "text": "Neither agree nor disagree"
+            },
+            {
+              "value": "somewhat_disagree",
+              "text": "Somewhat disagree"
+            },
+            {
+              "value": "disagree",
+              "text": "Disagree"
+            },
+            {
+              "value": "strongly_disagree",
+              "text": "Strongly disagree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A10_Q1_1_awareness_disclose",
+              "text": "Companies seeking information online should disclose the way the data are collected, processed, and used."
+            },
+            {
+              "value": "A10_Q1_2_awareness_policy",
+              "text": "A good consumer online privacy policy should have a clear and conspicuous disclosure."
+            },
+            {
+              "value": "A10_Q1_3_awareness_important",
+              "text": "It is very important to me that I am aware and knowledgeable about how my personal information will be used."
+            },
+            {
+              "value": "A10_Q1_4_collection_bothers_ask",
+              "text": "It usually bothers me when online companies ask me for personal information."
+            },
+            {
+              "value": "A10_Q1_5_collection_think_twice",
+              "text": "When online companies ask me for personal information, I sometimes think twice before providing it."
+            },
+            {
+              "value": "A10_Q1_6_collection_bothers_many",
+              "text": "It bothers me to give personal information to so many online companies."
+            },
+            {
+              "value": "A10_Q1_7_collection_too_much",
+              "text": "I’m concerned that online companies are collecting too much personal information about me."
+            }
+          ]
+        }
+      ]
     }
   ],
-  "completedHtml": "<div>TBD</div>"
+  "completedHtml": "<div>Thank you for taking part in the survey. </div>"
 }
