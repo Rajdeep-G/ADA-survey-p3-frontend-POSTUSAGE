@@ -70,7 +70,6 @@
             "Much higher"
           ]
         },
-
         {
           "type": "html",
           "name": "A2_T2",
@@ -86,11 +85,26 @@
           "alternateRows": true,
           "verticalAlign": "middle",
           "columns": [
-            { "value": 1, "text": "1 (Strongly disagree)" },
-            { "value": 2, "text": "2" },
-            { "value": 3, "text": "3" },
-            { "value": 4, "text": "4" },
-            { "value": 5, "text": "5 (Strongly agree)" }
+            {
+              "value": 1,
+              "text": "1 (Strongly disagree)"
+            },
+            {
+              "value": 2,
+              "text": "2"
+            },
+            {
+              "value": 3,
+              "text": "3"
+            },
+            {
+              "value": 4,
+              "text": "4"
+            },
+            {
+              "value": 5,
+              "text": "5 (Strongly agree)"
+            }
           ],
           "rows": [
             {
@@ -111,7 +125,6 @@
             }
           ]
         },
-
         {
           "type": "matrix",
           "name": "A2_Q3",
@@ -122,11 +135,26 @@
           "alternateRows": true,
           "verticalAlign": "middle",
           "columns": [
-            { "value": 1, "text": "1 (Strongly disagree)" },
-            { "value": 2, "text": "2" },
-            { "value": 3, "text": "3" },
-            { "value": 4, "text": "4" },
-            { "value": 5, "text": "5 (Strongly agree)" }
+            {
+              "value": 1,
+              "text": "1 (Strongly disagree)"
+            },
+            {
+              "value": 2,
+              "text": "2"
+            },
+            {
+              "value": 3,
+              "text": "3"
+            },
+            {
+              "value": 4,
+              "text": "4"
+            },
+            {
+              "value": 5,
+              "text": "5 (Strongly agree)"
+            }
           ],
           "rows": [
             {
@@ -151,7 +179,6 @@
             }
           ]
         },
-
         {
           "type": "matrix",
           "name": "A2_Q4",
@@ -162,11 +189,26 @@
           "alternateRows": true,
           "verticalAlign": "middle",
           "columns": [
-            { "value": 1, "text": "1 (Strongly disagree)" },
-            { "value": 2, "text": "2" },
-            { "value": 3, "text": "3" },
-            { "value": 4, "text": "4" },
-            { "value": 5, "text": "5 (Strongly agree)" }
+            {
+              "value": 1,
+              "text": "1 (Strongly disagree)"
+            },
+            {
+              "value": 2,
+              "text": "2"
+            },
+            {
+              "value": 3,
+              "text": "3"
+            },
+            {
+              "value": 4,
+              "text": "4"
+            },
+            {
+              "value": 5,
+              "text": "5 (Strongly agree)"
+            }
           ],
           "rows": [
             {
@@ -199,7 +241,6 @@
             }
           ]
         },
-
         {
           "type": "matrix",
           "name": "A2_Q5",
@@ -210,11 +251,26 @@
           "alternateRows": true,
           "verticalAlign": "middle",
           "columns": [
-            { "value": 1, "text": "1 (Strongly disagree)" },
-            { "value": 2, "text": "2" },
-            { "value": 3, "text": "3" },
-            { "value": 4, "text": "4" },
-            { "value": 5, "text": "5 (Strongly agree)" }
+            {
+              "value": 1,
+              "text": "1 (Strongly disagree)"
+            },
+            {
+              "value": 2,
+              "text": "2"
+            },
+            {
+              "value": 3,
+              "text": "3"
+            },
+            {
+              "value": 4,
+              "text": "4"
+            },
+            {
+              "value": 5,
+              "text": "5 (Strongly agree)"
+            }
           ],
           "rows": [
             {
@@ -255,7 +311,6 @@
             "Very uncomfortable"
           ]
         },
-
         {
           "type": "html",
           "name": "A2_T3",
@@ -271,11 +326,26 @@
           "alternateRows": true,
           "verticalAlign": "middle",
           "columns": [
-            { "value": "strongly_agree", "text": "Strongly agree" },
-            { "value": "agree", "text": "Agree" },
-            { "value": "neither", "text": "Neither agree nor disagree" },
-            { "value": "disagree", "text": "Disagree" },
-            { "value": "strongly_disagree", "text": "Strongly disagree" }
+            {
+              "value": "strongly_agree",
+              "text": "Strongly agree"
+            },
+            {
+              "value": "agree",
+              "text": "Agree"
+            },
+            {
+              "value": "neither",
+              "text": "Neither agree nor disagree"
+            },
+            {
+              "value": "disagree",
+              "text": "Disagree"
+            },
+            {
+              "value": "strongly_disagree",
+              "text": "Strongly disagree"
+            }
           ],
           "rows": [
             {
@@ -292,7 +362,6 @@
             }
           ]
         },
-
         {
           "type": "matrix",
           "name": "A2_Q8",
@@ -303,11 +372,26 @@
           "alternateRows": true,
           "verticalAlign": "middle",
           "columns": [
-            { "value": "strongly_agree", "text": "Strongly agree" },
-            { "value": "agree", "text": "Agree" },
-            { "value": "neither", "text": "Neither agree nor disagree" },
-            { "value": "disagree", "text": "Disagree" },
-            { "value": "strongly_disagree", "text": "Strongly disagree" }
+            {
+              "value": "strongly_agree",
+              "text": "Strongly agree"
+            },
+            {
+              "value": "agree",
+              "text": "Agree"
+            },
+            {
+              "value": "neither",
+              "text": "Neither agree nor disagree"
+            },
+            {
+              "value": "disagree",
+              "text": "Disagree"
+            },
+            {
+              "value": "strongly_disagree",
+              "text": "Strongly disagree"
+            }
           ],
           "rows": [
             {
@@ -324,7 +408,6 @@
             }
           ]
         },
-
         {
           "type": "matrix",
           "name": "A2_Q9",
@@ -335,11 +418,26 @@
           "alternateRows": true,
           "verticalAlign": "middle",
           "columns": [
-            { "value": "strongly_agree", "text": "Strongly agree" },
-            { "value": "agree", "text": "Agree" },
-            { "value": "neither", "text": "Neither agree nor disagree" },
-            { "value": "disagree", "text": "Disagree" },
-            { "value": "strongly_disagree", "text": "Strongly disagree" }
+            {
+              "value": "strongly_agree",
+              "text": "Strongly agree"
+            },
+            {
+              "value": "agree",
+              "text": "Agree"
+            },
+            {
+              "value": "neither",
+              "text": "Neither agree nor disagree"
+            },
+            {
+              "value": "disagree",
+              "text": "Disagree"
+            },
+            {
+              "value": "strongly_disagree",
+              "text": "Strongly disagree"
+            }
           ],
           "rows": [
             {
@@ -352,14 +450,17 @@
             }
           ]
         },
-
         {
           "type": "radiogroup",
           "name": "A2_Q10",
           "title": "Did you notice the tool's ordering change at any point during the week?",
           "isRequired": true,
           "colCount": 3,
-          "choices": ["Yes", "No", "Not sure"]
+          "choices": [
+            "Yes",
+            "No",
+            "Not sure"
+          ]
         },
         {
           "type": "comment",
@@ -385,7 +486,9 @@
     {
       "name": "A4",
       "title": "TBD",
-      "elements": [{}]
+      "elements": [
+        {}
+      ]
     },
     {
       "name": "A5",
@@ -401,14 +504,38 @@
           "alternateRows": true,
           "verticalAlign": "middle",
           "columns": [
-            { "value": "much_more_likely", "text": "Much more likely" },
-            { "value": "more_likely", "text": "More likely" },
-            { "value": "somewhat_more_likely", "text": "Somewhat more likely" },
-            { "value": "about_the_same", "text": "About the same as before" },
-            { "value": "somewhat_less_likely", "text": "Somewhat less likely" },
-            { "value": "less_likely", "text": "Less likely" },
-            { "value": "much_less_likely", "text": "Much less likely" },
-            { "value": "dont_know", "text": "Don't know" }
+            {
+              "value": "much_more_likely",
+              "text": "Much more likely"
+            },
+            {
+              "value": "more_likely",
+              "text": "More likely"
+            },
+            {
+              "value": "somewhat_more_likely",
+              "text": "Somewhat more likely"
+            },
+            {
+              "value": "about_the_same",
+              "text": "About the same as before"
+            },
+            {
+              "value": "somewhat_less_likely",
+              "text": "Somewhat less likely"
+            },
+            {
+              "value": "less_likely",
+              "text": "Less likely"
+            },
+            {
+              "value": "much_less_likely",
+              "text": "Much less likely"
+            },
+            {
+              "value": "dont_know",
+              "text": "Don't know"
+            }
           ],
           "rows": [
             {
@@ -443,7 +570,6 @@
       "name": "A6",
       "title": "Tradeoffs",
       "elements": [
-
         {
           "type": "matrix",
           "name": "A6_Q1",
@@ -454,11 +580,26 @@
           "alternateRows": true,
           "verticalAlign": "middle",
           "columns": [
-            { "value": "definitely_a", "text": "Definitely A" },
-            { "value": "probably_a", "text": "Probably A" },
-            { "value": "not_sure", "text": "I'm not sure" },
-            { "value": "probably_b", "text": "Probably B" },
-            { "value": "definitely_b", "text": "Definitely B" }
+            {
+              "value": "definitely_a",
+              "text": "Definitely A"
+            },
+            {
+              "value": "probably_a",
+              "text": "Probably A"
+            },
+            {
+              "value": "not_sure",
+              "text": "I'm not sure"
+            },
+            {
+              "value": "probably_b",
+              "text": "Probably B"
+            },
+            {
+              "value": "definitely_b",
+              "text": "Definitely B"
+            }
           ],
           "rows": [
             {
@@ -481,7 +622,7 @@
         }
       ]
     },
-        {
+    {
       "name": "A7",
       "title": "Opinions about Activity Collection and Personalization",
       "elements": [
@@ -553,8 +694,222 @@
           ]
         }
       ]
+    },
+    {
+      "name": "A8",
+      "title": "Knowledge Certainty and Facts",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "A*_Q1",
+          "title": "What pieces of activity data do you think Google collects when you use your Google Account on multiple devices? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Search queries typed or spoken",
+            "Websites visited in Chrome",
+            "YouTube watch and search history",
+            "Date of activity",
+            "Time of activity",
+            "Approximate location at the time of activity",
+            "Device used (e.g., phone, laptop, tablet)",
+            "App activity and usage details",
+            "Interactions with ads (e.g., ads viewed or clicked)",
+            "Data shared with third-party apps using Google login"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)",
+          "showNoneItem": true,
+          "noneText": "I don’t think Google collects data across services"
+        },
+        {
+          "type": "matrix",
+          "name": "A8_Q2",
+          "title": "Imagine a regular Google user with a normal account, using Google services with the default settings. How likely or unlikely do you expect it is that Google retains a record of the following?",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": "very_likely",
+              "text": "Very likely"
+            },
+            {
+              "value": "likely",
+              "text": "Likely"
+            },
+            {
+              "value": "somewhat_likely",
+              "text": "Somewhat likely"
+            },
+            {
+              "value": "neutral",
+              "text": "Neither likely nor unlikely"
+            },
+            {
+              "value": "somewhat_unlikely",
+              "text": "Somewhat unlikely"
+            },
+            {
+              "value": "unlikely",
+              "text": "Unlikely"
+            },
+            {
+              "value": "very_unlikely",
+              "text": "Very unlikely"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A8_Q2_1_search_text",
+              "text": "The text of every search they have typed"
+            },
+            {
+              "value": "A8_Q2_2_unsubmitted_search",
+              "text": "Searches they typed but did not submit"
+            },
+            {
+              "value": "A8_Q2_3_youtube_watch",
+              "text": "Which YouTube videos they watched, and for how long"
+            },
+            {
+              "value": "A8_Q2_4_voice_recordings",
+              "text": "Voice recordings from Assistant queries"
+            },
+            {
+              "value": "A8_Q2_5_places_travelled",
+              "text": "Places they physically travelled to"
+            },
+            {
+              "value": "A8_Q2_6_contact_list",
+              "text": "Their contact list"
+            },
+            {
+              "value": "A8_Q2_7_device_colour",
+              "text": "The colour of the device they used"
+            },
+            {
+              "value": "A8_Q2_8_android_apps",
+              "text": "Which apps they opened on an Android phone"
+            },
+            {
+              "value": "A8_Q2_9_ads_clicked",
+              "text": "Ads they clicked"
+            },
+            {
+              "value": "A8_Q2_10_signed_out_searches",
+              "text": "Searches made while signed out"
+            },
+            {
+              "value": "A8_Q2_11_incognito_searches",
+              "text": "Searches made in Incognito mode"
+            },
+            {
+              "value": "A8_Q2_12_email_content",
+              "text": "The content of their emails"
+            },
+            {
+              "value": "A8_Q2_13_national_id",
+              "text": "Their Social Security / national ID number"
+            },
+            {
+              "value": "A8_Q2_14_num_devices",
+              "text": "How many devices they use"
+            },
+            {
+              "value": "A8_Q2_15_email_purchases",
+              "text": "Purchases confirmed by email"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "A8_Q3",
+          "title": "In the last week, about how many searches do you think you made on Google?",
+          "isRequired": true,
+          "inputType": "text",
+          "placeholder": "Enter a number"
+        },
+        {
+          "type": "text",
+          "name": "A8_Q4",
+          "title": "In the last week, about how many YouTube videos do you think you watched?",
+          "isRequired": true,
+          "inputType": "text",
+          "placeholder": "Enter a number"
+        },
+        {
+          "type": "text",
+          "name": "A8_Q5",
+          "title": "In the last week, about how many separate items do you think were added to your Google activity dashboard?",
+          "isRequired": true,
+          "inputType": "text",
+          "placeholder": "Enter a number"
+        },
+        {
+          "type": "slider",
+          "name": "A8_Q6",
+          "title": "Of the items in your Google activity history, about what percentage do you think are still stored from more than a year ago?",
+          "description": "0% = none of them; 100% = all of them.",
+          "isRequired": true,
+          "min": 0,
+          "max": 100,
+          "step": 1
+        },
+        {
+          "type": "radiogroup",
+          "name": "A8_Q7",
+          "title": "Which of the following privacy approaches would you prefer for managing your Google activity data (e.g., searches, browsing history, app activity, YouTube history) in the future?",
+          "isRequired": true,
+          "colCount": 1,
+          "choices": [
+            "Give consent to Google to collect and store all activity data indefinitely, until I choose to delete it",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 3 months",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 18 months",
+            "Store all activity data only on my device, allow required computations to run on-device, and share only aggregated results with Google instead of full data",
+            "Do not give consent to Google to collect or store any of my activity data, and delete any data currently stored by Google immediately",
+            "None of the above"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A8_Q8",
+          "title": "Do you believe that Google ensures the security of the activity data it stores?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "I am not sure"
+          ]
+        },
+        {
+          "type": "rating",
+          "name": "A8_Q9",
+          "title": "On a scale of 1 to 5, with 1 being the least and 5 being the most, how much do you trust Google not to misuse your activity data?",
+          "isRequired": true,
+          "rateCount": 5,
+          "rateMin": 1,
+          "rateMax": 5,
+          "minRateDescription": "1 = Least",
+          "maxRateDescription": "5 = Most"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A8_Q10",
+          "title": "Do you think that you can access your activity data collected by Google?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Yes",
+            "No",
+            "Maybe"
+          ]
+        }
+      ]
     }
   ],
-
   "completedHtml": "<div style='text-align:center;'><a href='https://www.prolific.co' target='_blank' rel='noopener noreferrer'>Return to Prolific</a></div><p style='margin:16px 0 0 0; opacity:0.8;'>Thank you again for taking part.</p></div>"
 }
