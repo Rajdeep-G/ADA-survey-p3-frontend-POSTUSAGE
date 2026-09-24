@@ -909,6 +909,91 @@
           ]
         }
       ]
+    },
+    {
+      "name": "A9",
+      "title": "System Usability Scale",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A9_T1",
+          "html": "<p style=\"margin:0;\">You have now been using the ADA extension, referred to as the &ldquo;system&rdquo; below, for the past week. This section presents a set of general statements about your overall experience interacting with it. Drawing on your usage over this period, please select the answer choice that best describes your agreement or disagreement with each statement.</p>"
+        },
+        {
+          "type": "matrix",
+          "name": "A9_Q1",
+          "title": "Please rate your agreement with each statement.",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": "strongly_agree",
+              "text": "Strongly agree"
+            },
+            {
+              "value": "agree",
+              "text": "Agree"
+            },
+            {
+              "value": "neither",
+              "text": "Neither agree nor disagree"
+            },
+            {
+              "value": "disagree",
+              "text": "Disagree"
+            },
+            {
+              "value": "strongly_disagree",
+              "text": "Strongly disagree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A9_Q1_1_use_frequently",
+              "text": "I think that I would like to use this system frequently."
+            },
+            {
+              "value": "A9_Q1_2_unnecessarily_complex",
+              "text": "I found the system unnecessarily complex."
+            },
+            {
+              "value": "A9_Q1_3_easy_to_use",
+              "text": "I thought the system was easy to use."
+            },
+            {
+              "value": "A9_Q1_4_need_technical_support",
+              "text": "I think that I would need the support of a technical person to be able to use this system."
+            },
+            {
+              "value": "A9_Q1_5_well_integrated",
+              "text": "I found the various functions in this system were well-integrated."
+            },
+            {
+              "value": "A9_Q1_6_too_much_inconsistency",
+              "text": "I thought there was too much inconsistency in this system."
+            },
+            {
+              "value": "A9_Q1_7_learn_quickly",
+              "text": "I would imagine that most people would learn to use this system very quickly."
+            },
+            {
+              "value": "A9_Q1_8_cumbersome",
+              "text": "I found the system very cumbersome to use."
+            },
+            {
+              "value": "A9_Q1_9_felt_confident",
+              "text": "I felt very confident using the system."
+            },
+            {
+              "value": "A9_Q1_10_needed_to_learn_a_lot",
+              "text": "I needed to learn a lot of things before I could get going with this system."
+            }
+          ]
+        }
+      ]
     }
   ],
   "completedHtml": "<div style='text-align:center;'><a href='https://www.prolific.co' target='_blank' rel='noopener noreferrer'>Return to Prolific</a></div><p style='margin:16px 0 0 0; opacity:0.8;'>Thank you again for taking part.</p></div>"

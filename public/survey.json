@@ -72,80 +72,26 @@
         {}
       ]
     },
+
     {
-      "name": "A6",
-      "title": "Tradeoffs",
+      "name": "A9",
+      "title": "System Usability Scale",
       "elements": [
         {
+          "type": "html",
+          "name": "A9_T1",
+          "html": "<p style=\"margin:0;\">You have now been using the ADA extension, referred to as the &ldquo;system&rdquo; below, for the past week. This section presents a set of general statements about your overall experience interacting with it. Drawing on your usage over this period, please select the answer choice that best describes your agreement or disagreement with each statement.</p>"
+
+        },
+        {
           "type": "matrix",
-          "name": "A6_Q1",
-          "title": "For each pair below, imagine you had to choose between Option A and Option B. Please indicate which you would choose.",
+          "name": "A9_Q1",
+          "title": "Please rate your agreement with each statement.",
           "isRequired": true,
           "isAllRowRequired": true,
           "rowTitleWidth": "50%",
           "alternateRows": true,
           "verticalAlign": "middle",
-          "columns": [
-            {
-              "value": "definitely_a",
-              "text": "Definitely A"
-            },
-            {
-              "value": "probably_a",
-              "text": "Probably A"
-            },
-            {
-              "value": "not_sure",
-              "text": "I'm not sure"
-            },
-            {
-              "value": "probably_b",
-              "text": "Probably B"
-            },
-            {
-              "value": "definitely_b",
-              "text": "Definitely B"
-            }
-          ],
-          "rows": [
-            {
-              "value": "A6_Q1_1_free_vs_paid",
-              "text": "A: Free access to services, but your activity is stored indefinitely. B: A monthly fee, but no activity is stored."
-            },
-            {
-              "value": "A6_Q1_2_delete_vs_accuracy",
-              "text": "A: Your activity is deleted automatically after three months, but recommendations get worse. B: Your activity is kept forever, and recommendations stay accurate."
-            },
-            {
-              "value": "A6_Q1_3_personalization",
-              "text": "A: Your search results are not personalized, but nothing you search is stored. B: Your results are personalized, but everything you search is stored."
-            },
-            {
-              "value": "A6_Q1_4_who_labels_sensitive",
-              "text": "A: A company decides which of your activity is sensitive. B: You label which of your activity is sensitive yourself, but must do it manually."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "A7",
-      "title": "Opinions about Activity Collection and Personalization",
-      "elements": [
-        {
-          "type": "html",
-          "name": "A3_T1",
-          "html": "<p>The following section repeats some of the questions you answered in the pre-usage part of this study. This is intentional: we would like to understand whether, and how, your opinions may have changed after using ADA for the past week. As before, during the rest of this survey, we use the term 'activity data' to refer to the records a company (e.g., Google) keeps of what you searched for, watched, visited, or did while using its services.</p>"
-        },
-        {
-          "type": "matrix",
-          "name": "A7_Q1",
-          "title": "Please indicate how much you agree or disagree with each of the following statements.",
-          "rowTitleWidth": "70%",
-          "alternateRows": true,
-          "verticalAlign": "middle",
-          "isRequired": true,
-          "isAllRowRequired": true,
           "columns": [
             {
               "value": "strongly_agree",
@@ -156,7 +102,7 @@
               "text": "Agree"
             },
             {
-              "value": "neutral",
+              "value": "neither",
               "text": "Neither agree nor disagree"
             },
             {
@@ -170,248 +116,45 @@
           ],
           "rows": [
             {
-              "value": "A7_Q1_1_want_personalization",
-              "text": "I would like the services I use to be personalized based on my past activity, as opposed to being the same for everyone."
+              "value": "A9_Q1_1_use_frequently",
+              "text": "I think that I would like to use this system frequently."
             },
             {
-              "value": "A7_Q1_2_comfortable_record",
-              "text": "I would be comfortable with a company keeping a record of what I search for and watch."
+              "value": "A9_Q1_2_unnecessarily_complex",
+              "text": "I found the system unnecessarily complex."
             },
             {
-              "value": "A7_Q1_3_want_transparency_system",
-              "text": "If it were available, I would like to use a system that shows me what activity data has been collected about me."
+              "value": "A9_Q1_3_easy_to_use",
+              "text": "I thought the system was easy to use."
             },
             {
-              "value": "A7_Q1_4_adequate_explanation",
-              "text": "I feel that companies adequately explain what they keep in my activity history."
+              "value": "A9_Q1_4_need_technical_support",
+              "text": "I think that I would need the support of a technical person to be able to use this system."
             },
             {
-              "value": "A7_Q1_5_understand_retention",
-              "text": "I feel that I understand how companies decide what to keep in my activity history."
+              "value": "A9_Q1_5_well_integrated",
+              "text": "I found the various functions in this system were well-integrated."
             },
             {
-              "value": "A7_Q1_6_fair_to_store",
-              "text": "I would consider it fair for a company to store my activity in order to personalize the services I use."
+              "value": "A9_Q1_6_too_much_inconsistency",
+              "text": "I thought there was too much inconsistency in this system."
             },
             {
-              "value": "A7_Q1_7_creepy_to_store",
-              "text": "I would consider it creepy for a company to store my activity in order to personalize the services I use."
+              "value": "A9_Q1_7_learn_quickly",
+              "text": "I would imagine that most people would learn to use this system very quickly."
+            },
+            {
+              "value": "A9_Q1_8_cumbersome",
+              "text": "I found the system very cumbersome to use."
+            },
+            {
+              "value": "A9_Q1_9_felt_confident",
+              "text": "I felt very confident using the system."
+            },
+            {
+              "value": "A9_Q1_10_needed_to_learn_a_lot",
+              "text": "I needed to learn a lot of things before I could get going with this system."
             }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "A8",
-      "title": "Knowledge Certainty and Facts",
-      "elements": [
-        {
-          "type": "checkbox",
-          "name": "A*_Q1",
-          "title": "What pieces of activity data do you think Google collects when you use your Google Account on multiple devices? (Select all that apply)",
-          "isRequired": true,
-          "colCount": 3,
-          "choices": [
-            "Search queries typed or spoken",
-            "Websites visited in Chrome",
-            "YouTube watch and search history",
-            "Date of activity",
-            "Time of activity",
-            "Approximate location at the time of activity",
-            "Device used (e.g., phone, laptop, tablet)",
-            "App activity and usage details",
-            "Interactions with ads (e.g., ads viewed or clicked)",
-            "Data shared with third-party apps using Google login"
-          ],
-          "hasOther": true,
-          "otherText": "Other (please specify)",
-          "showNoneItem": true,
-          "noneText": "I don’t think Google collects data across services"
-        },
-        {
-          "type": "matrix",
-          "name": "A8_Q2",
-          "title": "Imagine a regular Google user with a normal account, using Google services with the default settings. How likely or unlikely do you expect it is that Google retains a record of the following?",
-          "isRequired": true,
-          "isAllRowRequired": true,
-          "rowTitleWidth": "50%",
-          "alternateRows": true,
-          "verticalAlign": "middle",
-          "columns": [
-            {
-              "value": "very_likely",
-              "text": "Very likely"
-            },
-            {
-              "value": "likely",
-              "text": "Likely"
-            },
-            {
-              "value": "somewhat_likely",
-              "text": "Somewhat likely"
-            },
-            {
-              "value": "neutral",
-              "text": "Neither likely nor unlikely"
-            },
-            {
-              "value": "somewhat_unlikely",
-              "text": "Somewhat unlikely"
-            },
-            {
-              "value": "unlikely",
-              "text": "Unlikely"
-            },
-            {
-              "value": "very_unlikely",
-              "text": "Very unlikely"
-            }
-          ],
-          "rows": [
-            {
-              "value": "A8_Q2_1_search_text",
-              "text": "The text of every search they have typed"
-            },
-            {
-              "value": "A8_Q2_2_unsubmitted_search",
-              "text": "Searches they typed but did not submit"
-            },
-            {
-              "value": "A8_Q2_3_youtube_watch",
-              "text": "Which YouTube videos they watched, and for how long"
-            },
-            {
-              "value": "A8_Q2_4_voice_recordings",
-              "text": "Voice recordings from Assistant queries"
-            },
-            {
-              "value": "A8_Q2_5_places_travelled",
-              "text": "Places they physically travelled to"
-            },
-            {
-              "value": "A8_Q2_6_contact_list",
-              "text": "Their contact list"
-            },
-            {
-              "value": "A8_Q2_7_device_colour",
-              "text": "The colour of the device they used"
-            },
-            {
-              "value": "A8_Q2_8_android_apps",
-              "text": "Which apps they opened on an Android phone"
-            },
-            {
-              "value": "A8_Q2_9_ads_clicked",
-              "text": "Ads they clicked"
-            },
-            {
-              "value": "A8_Q2_10_signed_out_searches",
-              "text": "Searches made while signed out"
-            },
-            {
-              "value": "A8_Q2_11_incognito_searches",
-              "text": "Searches made in Incognito mode"
-            },
-            {
-              "value": "A8_Q2_12_email_content",
-              "text": "The content of their emails"
-            },
-            {
-              "value": "A8_Q2_13_national_id",
-              "text": "Their Social Security / national ID number"
-            },
-            {
-              "value": "A8_Q2_14_num_devices",
-              "text": "How many devices they use"
-            },
-            {
-              "value": "A8_Q2_15_email_purchases",
-              "text": "Purchases confirmed by email"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "name": "A8_Q3",
-          "title": "In the last week, about how many searches do you think you made on Google?",
-          "isRequired": true,
-          "inputType": "text",
-          "placeholder": "Enter a number"
-        },
-        {
-          "type": "text",
-          "name": "A8_Q4",
-          "title": "In the last week, about how many YouTube videos do you think you watched?",
-          "isRequired": true,
-          "inputType": "text",
-          "placeholder": "Enter a number"
-        },
-        {
-          "type": "text",
-          "name": "A8_Q5",
-          "title": "In the last week, about how many separate items do you think were added to your Google activity dashboard?",
-          "isRequired": true,
-          "inputType": "text",
-          "placeholder": "Enter a number"
-        },
-        {
-          "type": "slider",
-          "name": "A8_Q6",
-          "title": "Of the items in your Google activity history, about what percentage do you think are still stored from more than a year ago?",
-          "description": "0% = none of them; 100% = all of them.",
-          "isRequired": true,
-          "min": 0,
-          "max": 100,
-          "step": 1
-        },
-        {
-          "type": "radiogroup",
-          "name": "A8_Q7",
-          "title": "Which of the following privacy approaches would you prefer for managing your Google activity data (e.g., searches, browsing history, app activity, YouTube history) in the future?",
-          "isRequired": true,
-          "colCount": 1,
-          "choices": [
-            "Give consent to Google to collect and store all activity data indefinitely, until I choose to delete it",
-            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 3 months",
-            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 18 months",
-            "Store all activity data only on my device, allow required computations to run on-device, and share only aggregated results with Google instead of full data",
-            "Do not give consent to Google to collect or store any of my activity data, and delete any data currently stored by Google immediately",
-            "None of the above"
-          ]
-        },
-        {
-          "type": "radiogroup",
-          "name": "A8_Q8",
-          "title": "Do you believe that Google ensures the security of the activity data it stores?",
-          "isRequired": true,
-          "colCount": 3,
-          "choices": [
-            "Yes",
-            "No",
-            "I am not sure"
-          ]
-        },
-        {
-          "type": "rating",
-          "name": "A8_Q9",
-          "title": "On a scale of 1 to 5, with 1 being the least and 5 being the most, how much do you trust Google not to misuse your activity data?",
-          "isRequired": true,
-          "rateCount": 5,
-          "rateMin": 1,
-          "rateMax": 5,
-          "minRateDescription": "1 = Least",
-          "maxRateDescription": "5 = Most"
-        },
-        {
-          "type": "radiogroup",
-          "name": "A8_Q10",
-          "title": "Do you think that you can access your activity data collected by Google?",
-          "isRequired": true,
-          "colCount": 3,
-          "choices": [
-            "Yes",
-            "No",
-            "Maybe"
           ]
         }
       ]
