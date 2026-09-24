@@ -481,39 +481,76 @@
         }
       ]
     },
-    {
+        {
       "name": "A7",
-      "title": "First-Use Experience Survey",
+      "title": "Opinions about Activity Collection and Personalization",
       "elements": [
         {
           "type": "html",
-          "name": "A7_T1",
-          "html": "<p>Thank you for trying ADA for the first time. Before you continue to use it over the coming days, we’d love to understand how your initial experience felt. Your responses will help us improve ADA so that it feels even more helpful, intuitive, and comfortable for users like you.</p><p>Please briefly (1–3 sentences) explain:</p>"
-        }
-      ]
-    },
-    {
-      "name": "A8",
-      "title": " IUIPC Awareness and Collection Subscales",
-      "elements": [
+          "name": "A3_T1",
+          "html": "<p>The following section repeats some of the questions you answered in the pre-usage part of this study. This is intentional: we would like to understand whether, and how, your opinions may have changed after using ADA for the past week. As before, during the rest of this survey, we use the term 'activity data' to refer to the records a company (e.g., Google) keeps of what you searched for, watched, visited, or did while using its services.</p>"
+        },
         {
-          "type": "html",
-          "name": "A8_T1",
-          "html": "<p><strong>1.8 IUIPC Awareness and Collection Subscales</strong></p>"
-        }
-      ]
-    },
-    {
-      "name": "A9",
-      "title": "Demographics",
-      "elements": [
-        {
-          "type": "radiogroup",
-          "name": "A9_Q1",
-          "title": "With what gender do you identify?",
+          "type": "matrix",
+          "name": "A7_Q1",
+          "title": "Please indicate how much you agree or disagree with each of the following statements.",
+          "rowTitleWidth": "70%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
           "isRequired": true,
-          "colCount": 4,
-          "choices": ["Woman", "Man", "Non-binary", "Prefer not to answer"]
+          "isAllRowRequired": true,
+          "columns": [
+            {
+              "value": "strongly_agree",
+              "text": "Strongly agree"
+            },
+            {
+              "value": "agree",
+              "text": "Agree"
+            },
+            {
+              "value": "neutral",
+              "text": "Neither agree nor disagree"
+            },
+            {
+              "value": "disagree",
+              "text": "Disagree"
+            },
+            {
+              "value": "strongly_disagree",
+              "text": "Strongly disagree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A7_Q1_1_want_personalization",
+              "text": "I would like the services I use to be personalized based on my past activity, as opposed to being the same for everyone."
+            },
+            {
+              "value": "A7_Q1_2_comfortable_record",
+              "text": "I would be comfortable with a company keeping a record of what I search for and watch."
+            },
+            {
+              "value": "A7_Q1_3_want_transparency_system",
+              "text": "If it were available, I would like to use a system that shows me what activity data has been collected about me."
+            },
+            {
+              "value": "A7_Q1_4_adequate_explanation",
+              "text": "I feel that companies adequately explain what they keep in my activity history."
+            },
+            {
+              "value": "A7_Q1_5_understand_retention",
+              "text": "I feel that I understand how companies decide what to keep in my activity history."
+            },
+            {
+              "value": "A7_Q1_6_fair_to_store",
+              "text": "I would consider it fair for a company to store my activity in order to personalize the services I use."
+            },
+            {
+              "value": "A7_Q1_7_creepy_to_store",
+              "text": "I would consider it creepy for a company to store my activity in order to personalize the services I use."
+            }
+          ]
         }
       ]
     }
