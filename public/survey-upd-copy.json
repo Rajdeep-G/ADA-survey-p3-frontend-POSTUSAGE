@@ -441,12 +441,43 @@
     },
     {
       "name": "A6",
-      "title": "Installing the extension (ADA)",
+      "title": "Tradeoffs",
       "elements": [
+
         {
-          "type": "html",
-          "name": "A6_T1",
-          "html": "<p>In this part, you will be asked to install a browser extension that we designed for the research called <b>ADA (Adaptive Data DAshboard)</b>. Follow the instructions given below.</p><div style='background:#fff; border-left:5px solid #19b394; border-radius:8px; padding:14px 18px; margin:18px 0;'><div style='font-weight:700; font-size:17px; margin-bottom:6px;'>🔒 Your privacy</div><p style='margin:0;'>You will <u>NOT</u> be required to share your Google activity data with us at any stage of the study. Our study involves interacting with a browser extension that <b>runs entirely on your device</b> and processes your data locally, without sending any information outside your browser.</p></div><div style='display:flex; flex-wrap:wrap; gap:14px; align-items:stretch; margin:14px 0;'><div style='flex:1 1 300px; min-width:0; background:#fff; border:1px solid #e3e3e3; border-top:4px solid #d9534f; border-radius:10px; padding:16px; box-sizing:border-box;'><div style='font-weight:700; margin-bottom:10px;'>What we DO NOT collect</div><div style='display:flex; flex-wrap:wrap; gap:8px;'><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ Name</span><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ Address</span><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ Email address</span><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ Date of birth</span><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ Phone number</span><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ Images</span><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ Videos</span><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ Contacts</span><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ Location data</span><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ ZIP/postcode</span><span style='background:#fdecea; color:#a1281b; padding:4px 12px; border-radius:999px; font-size:14px;'>✕ Links to social media accounts or posts</span></div></div><div style='flex:1 1 300px; min-width:0; background:#fff; border:1px solid #e3e3e3; border-top:4px solid #19b394; border-radius:10px; padding:16px; box-sizing:border-box;'><div style='font-weight:700; margin-bottom:10px;'>What we DO keep</div><div style='font-size:15px; color:#444;'>Only logs of your <b>interaction activity</b> (clicks, navigation, install and uninstall timestamps) while using the extension. These do <b>not</b> include any raw data or personal information.</div></div></div><div style='font-weight:700; font-size:17px; margin:24px 0 10px 0;'>Please follow the steps below to install and set up the ADA browser extension.</div><div style='display:flex; flex-wrap:wrap; gap:14px; align-items:stretch; margin:8px 0;'><div style='flex:1 1 calc(50% - 7px); min-width:280px; box-sizing:border-box; display:flex; gap:14px; align-items:center; background:#fff; border:1px solid #e3e3e3; border-radius:10px; padding:12px 16px;'><div style='flex:0 0 32px; width:32px; height:32px; border-radius:50%; background:#19b394; color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center;'>1</div><div style='font-size:15px;'>Open <b>Google Chrome</b> on your desktop/laptop.</div></div><div style='flex:1 1 calc(50% - 7px); min-width:280px; box-sizing:border-box; display:flex; gap:14px; align-items:center; background:#fff; border:1px solid #e3e3e3; border-radius:10px; padding:12px 16px;'><div style='flex:0 0 32px; width:32px; height:32px; border-radius:50%; background:#19b394; color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center;'>2</div><div style='font-size:15px;'>Log into your <b>Google Account</b>.</div></div><div style='flex:1 1 calc(50% - 7px); min-width:280px; box-sizing:border-box; display:flex; gap:14px; align-items:center; background:#fff; border:1px solid #e3e3e3; border-radius:10px; padding:12px 16px;'><div style='flex:0 0 32px; width:32px; height:32px; border-radius:50%; background:#19b394; color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center;'>3</div><div style='font-size:15px;'>Open a new tab and visit: <a href='https://myactivity.google.com/' target='_blank'>https://myactivity.google.com/</a> and <b>keep the tab open</b>.</div></div><div style='flex:1 1 calc(50% - 7px); min-width:280px; box-sizing:border-box; display:flex; gap:14px; align-items:center; background:#fff; border:1px solid #e3e3e3; border-radius:10px; padding:12px 16px;'><div style='flex:0 0 32px; width:32px; height:32px; border-radius:50%; background:#19b394; color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center;'>4</div><div style='font-size:15px;'>Visit the extension installation link provided below:<br><a href='https://chrome.google.com/webstore/detail/iaaghngfockmlmffnmcnngddbpgjkfme' target='_blank' style='display:inline-block; margin-top:8px; background:#19b394; color:#fff; padding:8px 18px; border-radius:6px; text-decoration:none; font-weight:600; font-size:15px;'>Open extension link ↗</a></div></div><div style='flex:1 1 calc(50% - 7px); min-width:280px; box-sizing:border-box; display:flex; gap:14px; align-items:center; background:#fff; border:1px solid #e3e3e3; border-radius:10px; padding:12px 16px;'><div style='flex:0 0 32px; width:32px; height:32px; border-radius:50%; background:#19b394; color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center;'>5</div><div style='font-size:15px;'>Click <b>“Add to Chrome” → “Add Extension”</b>.</div></div><div style='flex:1 1 calc(50% - 7px); min-width:280px; box-sizing:border-box; display:flex; gap:14px; align-items:center; background:#fff; border:1px solid #e3e3e3; border-radius:10px; padding:12px 16px;'><div style='flex:0 0 32px; width:32px; height:32px; border-radius:50%; background:#19b394; color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center;'>6</div><div style='font-size:15px;'>Once installed, <b>pin the extension</b> to your browser toolbar.</div></div></div>"
+          "type": "matrix",
+          "name": "A6_Q1",
+          "title": "For each pair below, imagine you had to choose between Option A and Option B. Please indicate which you would choose.",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": "definitely_a", "text": "Definitely A" },
+            { "value": "probably_a", "text": "Probably A" },
+            { "value": "not_sure", "text": "I'm not sure" },
+            { "value": "probably_b", "text": "Probably B" },
+            { "value": "definitely_b", "text": "Definitely B" }
+          ],
+          "rows": [
+            {
+              "value": "A6_Q1_1_free_vs_paid",
+              "text": "A: Free access to services, but your activity is stored indefinitely. B: A monthly fee, but no activity is stored."
+            },
+            {
+              "value": "A6_Q1_2_delete_vs_accuracy",
+              "text": "A: Your activity is deleted automatically after three months, but recommendations get worse. B: Your activity is kept forever, and recommendations stay accurate."
+            },
+            {
+              "value": "A6_Q1_3_personalization",
+              "text": "A: Your search results are not personalized, but nothing you search is stored. B: Your results are personalized, but everything you search is stored."
+            },
+            {
+              "value": "A6_Q1_4_who_labels_sensitive",
+              "text": "A: A company decides which of your activity is sensitive. B: You label which of your activity is sensitive yourself, but must do it manually."
+            }
+          ]
         }
       ]
     },
