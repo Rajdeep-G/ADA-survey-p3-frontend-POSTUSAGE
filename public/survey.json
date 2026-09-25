@@ -73,8 +73,7 @@
         {
           "type": "html",
           "name": "A2_T2",
-"html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Please rate your agreement with each statement below, grouped into four areas:</p><div style=\"display:flex; gap:10px; margin-bottom:12px;\"><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">System Quality</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Ease of Use &amp; Interaction Experience</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Perceived Usefulness</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Privacy &amp; Trust</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\">On a scale of 1 to 5, where <strong>1</strong> indicates &ldquo;Strongly disagree&rdquo; and <strong>5</strong> indicates &ldquo;Strongly agree.&rdquo;</p></div>"
-
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Please rate your agreement with each statement below, grouped into four areas:</p><div style=\"display:flex; gap:10px; margin-bottom:12px;\"><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">System Quality</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Ease of Use &amp; Interaction Experience</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Perceived Usefulness</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Privacy &amp; Trust</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\">On a scale of 1 to 5, where <strong>1</strong> indicates &ldquo;Strongly disagree&rdquo; and <strong>5</strong> indicates &ldquo;Strongly agree.&rdquo;</p></div>"
         },
         {
           "type": "matrix",
@@ -286,20 +285,6 @@
         },
         {
           "type": "radiogroup",
-          "name": "AC_2",
-          "title": "Please select \"Disagree\" for this statement so that we know you are reading carefully.",
-          "isRequired": true,
-          "colCount": 5,
-          "choices": [
-            "Strongly agree",
-            "Agree",
-            "Neither agree nor disagree",
-            "Disagree",
-            "Strongly disagree"
-          ]
-        },
-        {
-          "type": "radiogroup",
           "name": "A2_Q6",
           "title": "How did you feel using ADA by the end of the 7-day period?",
           "isRequired": true,
@@ -313,10 +298,25 @@
           ]
         },
         {
+          "type": "radiogroup",
+          "name": "AC_1",
+          "title": "Please select \"Strongly disagree\" for this statement so that we know you are reading carefully.",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Strongly agree",
+            "Agree",
+            "Neither agree nor disagree",
+            "Disagree",
+            "Strongly disagree"
+          ]
+        },
+        {
           "type": "html",
           "name": "A2_T3",
           "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Over the past week, ADA ranked and re-ordered your activity items. Thinking about how the tool <strong>ordered your activity items</strong> — please rate your agreement with each statement below, grouped into three areas:</p><div style=\"display:flex; gap:10px; margin-bottom:12px;\"><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Agreement</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Stability</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Trust and responsiveness</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\"><strong>Answer choices for all questions in this section:</strong> Strongly agree &middot; Agree &middot; Neither agree nor disagree &middot; Disagree &middot; Strongly disagree</p></div>"
         },
+
         {
           "type": "matrix",
           "name": "A2_Q7",
@@ -670,7 +670,24 @@
             }
           ]
         },
-
+        {
+          "type": "html",
+          "name": "AC_2_T",
+          "html": "<div style=\"border:1px solid #333; border-radius:4px; padding:14px 16px;\"><p style=\"margin:0 0 10px;\">The following question is to verify that you are a real person.</p><p style=\"margin:0;\">Please enter the word <strong>purple</strong> into the box below.</p></div>"
+        },
+        {
+          "type": "text",
+          "name": "AC_2",
+          "title": " ",
+          "isRequired": true,
+          "validators": [
+            {
+              "type": "expression",
+              "text": "Please enter the word \"purple\" exactly as shown.",
+              "expression": "{AC_2} = 'purple'"
+            }
+          ]
+        },
         {
           "type": "html",
           "name": "A4_T4",
@@ -925,6 +942,22 @@
           ]
         },
         {
+          "type": "radiogroup",
+          "name": "AC_3",
+          "title": "Please select \"Somewhat less likely\" for this item, regardless of your actual experience with computers.",
+          "isRequired": true,
+          "choices": [
+            "Much more likely",
+            "More likely",
+            "Somewhat more likely",
+            "About the same as before",
+            "Somewhat less likely",
+            "Less likely",
+            "Much less likely",
+            "Don't know"
+          ]
+        },
+        {
           "type": "html",
           "name": "A6_T3",
           "html": "<p style=\"margin:0 0 8px;\"> Now, we would like to understand your general preferences when it comes to balancing privacy, personalization, and convenience. Different people value these aspects differently, and there are no right or wrong responses.</p><p style=\"margin:0;\">Please indicate how much you agree or disagree with the following statements, on a scale of 1 to 5, where <strong>1</strong> indicates &ldquo;Strongly disagree&rdquo; and <strong>5</strong> indicates &ldquo;Strongly agree.&rdquo;</p>"
@@ -1084,6 +1117,14 @@
           "otherText": "Other (please specify)",
           "showNoneItem": true,
           "noneText": "I don’t think Google collects data across services"
+        },
+        {
+          "type": "radiogroup",
+          "name": "AC_4",
+          "title": "What comes before March?",
+          "isRequired": true,
+          "colCount": 4,
+          "choices": ["April", "February", "January", "May"]
         },
         {
           "type": "matrix",
@@ -1254,6 +1295,26 @@
           "rateMax": 5,
           "minRateDescription": "1 = Least",
           "maxRateDescription": "5 = Most"
+        },
+        {
+          "type": "text",
+          "name": "AC_5",
+          "title": "What is 10 divided by 5?",
+          "isRequired": true,
+          "inputType": "number",
+          "validators": [
+            {
+              "type": "numeric",
+              "text": "Please enter a number.",
+              "minValue": 0,
+              "maxValue": 20
+            },
+            {
+              "type": "expression",
+              "text": "Please double check your answer.",
+              "expression": "{AC_5} = 2"
+            }
+          ]
         },
         {
           "type": "radiogroup",
