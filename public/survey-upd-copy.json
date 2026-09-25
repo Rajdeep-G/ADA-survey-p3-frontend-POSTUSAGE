@@ -607,8 +607,186 @@
     },
     {
       "name": "A4",
-      "title": "TBD",
-      "elements": [{}]
+      "title": "Comfort with Activity Data Entries",
+      "elements": [
+        {
+          "type": "html",
+          "name": "<p style=\"margin:0;\">In this section, we would like you to reflect on a few activity items that you came across while using ADA during the past 7 days. You will select items that you personally found surprising, sensitive, or memorable during your usage. For each item, we will ask you a few questions to understand your perceptions, comfort levels, and privacy expectations.</p>"
+        },
+        {
+          "type": "html",
+          "name": "A4_T2",
+          "html": "<p>Think of <strong>3 activity items</strong> from your Google Activity history that you personally find sensitive. Please keep them in mind as you answer the questions below for each one. <strong>Do not type or describe the entries themselves anywhere in this survey.</strong></p>"
+        },
+
+        {
+          "type": "html",
+          "name": "A4_T3",
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:10px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0;\"><strong>Entry 1</strong> — with regard to this entry:</p></div>"
+        },
+        {
+          "type": "matrix",
+          "name": "A4_Q1",
+          "title": "How comfortable would you feel in each of the following situations?",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": "very_comfortable", "text": "Very comfortable" },
+            { "value": "slightly_comfortable", "text": "Slightly comfortable" },
+            {
+              "value": "neither",
+              "text": "Neither comfortable nor uncomfortable"
+            },
+            {
+              "value": "slightly_uncomfortable",
+              "text": "Slightly uncomfortable"
+            },
+            { "value": "very_uncomfortable", "text": "Very uncomfortable" }
+          ],
+          "rows": [
+            {
+              "value": "A4_Q1_1_intimate",
+              "text": "How comfortable would you feel if someone in your intimate relations (such as close friends, lovers, children, and close family members) knew about this entry?"
+            },
+            {
+              "value": "A4_Q1_2_personal",
+              "text": "How comfortable would you feel if someone in your personal relations (such as friends and associates) knew about it?"
+            },
+            {
+              "value": "A4_Q1_3_social",
+              "text": "How comfortable would you feel if someone in your social relations (such as strangers and new acquaintances) knew about it?"
+            },
+            {
+              "value": "A4_Q1_4_public",
+              "text": "How comfortable would you feel if someone in your public relations (such as people you see in public places but don't know) knew about it?"
+            },
+            {
+              "value": "A4_Q1_5_google_consent",
+              "text": "If Google asked for your consent before collecting this detail of the entry, how comfortable would you feel sharing it with Google?"
+            }
+          ]
+        },
+
+        {
+          "type": "html",
+          "name": "A4_T4",
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:10px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0;\"><strong>Entry 2</strong> — with regard to this entry:</p></div>"
+        },
+        {
+          "type": "matrix",
+          "name": "A4_Q2",
+          "title": "How comfortable would you feel in each of the following situations?",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": "very_comfortable", "text": "Very comfortable" },
+            { "value": "slightly_comfortable", "text": "Slightly comfortable" },
+            {
+              "value": "neither",
+              "text": "Neither comfortable nor uncomfortable"
+            },
+            {
+              "value": "slightly_uncomfortable",
+              "text": "Slightly uncomfortable"
+            },
+            { "value": "very_uncomfortable", "text": "Very uncomfortable" }
+          ],
+          "rows": [
+            {
+              "value": "A4_Q2_1_intimate",
+              "text": "How comfortable would you feel if someone in your intimate relations (such as close friends, lovers, children, and close family members) knew about this entry?"
+            },
+            {
+              "value": "A4_Q2_2_personal",
+              "text": "How comfortable would you feel if someone in your personal relations (such as friends and associates) knew about it?"
+            },
+            {
+              "value": "A4_Q2_3_social",
+              "text": "How comfortable would you feel if someone in your social relations (such as strangers and new acquaintances) knew about it?"
+            },
+            {
+              "value": "A4_Q2_4_public",
+              "text": "How comfortable would you feel if someone in your public relations (such as people you see in public places but don't know) knew about it?"
+            },
+            {
+              "value": "A4_Q2_5_google_consent",
+              "text": "If Google asked for your consent before collecting this detail of the entry, how comfortable would you feel sharing it with Google?"
+            }
+          ]
+        },
+
+        {
+          "type": "html",
+          "name": "A4_T5",
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:10px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0;\"><strong>Entry 3</strong> — with regard to this entry:</p></div>"
+        },
+        {
+          "type": "matrix",
+          "name": "A4_Q3",
+          "title": "How comfortable would you feel in each of the following situations?",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": "very_comfortable", "text": "Very comfortable" },
+            { "value": "slightly_comfortable", "text": "Slightly comfortable" },
+            {
+              "value": "neither",
+              "text": "Neither comfortable nor uncomfortable"
+            },
+            {
+              "value": "slightly_uncomfortable",
+              "text": "Slightly uncomfortable"
+            },
+            { "value": "very_uncomfortable", "text": "Very uncomfortable" }
+          ],
+          "rows": [
+            {
+              "value": "A4_Q3_1_intimate",
+              "text": "How comfortable would you feel if someone in your intimate relations (such as close friends, lovers, children, and close family members) knew about this entry?"
+            },
+            {
+              "value": "A4_Q3_2_personal",
+              "text": "How comfortable would you feel if someone in your personal relations (such as friends and associates) knew about it?"
+            },
+            {
+              "value": "A4_Q3_3_social",
+              "text": "How comfortable would you feel if someone in your social relations (such as strangers and new acquaintances) knew about it?"
+            },
+            {
+              "value": "A4_Q3_4_public",
+              "text": "How comfortable would you feel if someone in your public relations (such as people you see in public places but don't know) knew about it?"
+            },
+            {
+              "value": "A4_Q3_5_google_consent",
+              "text": "If Google asked for your consent before collecting this detail of the entry, how comfortable would you feel sharing it with Google?"
+            }
+          ]
+        },
+
+        {
+          "type": "radiogroup",
+          "name": "A4_Q4",
+          "title": "Which of the following privacy policies would you prefer to manage the privacy of similar entries of your Google activity data (e.g., searches, browsing history, app activity, YouTube history) in the future?",
+          "isRequired": true,
+          "choices": [
+            "Give consent to Google to collect and store all activity data indefinitely, until I choose to delete it",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 3 months",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 18 months",
+            "Store all activity data only on my device, allow required computations to run on-device, and share only aggregated results with Google instead of full data",
+            "Do not give consent to Google to collect or store any of my activity data, and delete any data currently stored by Google immediately",
+            "None of the above"
+          ]
+        }
+      ]
     },
     {
       "name": "A5",

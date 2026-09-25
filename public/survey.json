@@ -19,31 +19,453 @@
           "type": "text",
           "name": "A1_Q1",
           "title": "Briefly describe (1-2 sentences), what do you think is the purpose of this tool?",
-          "required": true
+          "isRequired": true
         },
         {
           "type": "text",
           "name": "A1_Q2",
-          "title": "Please list the new information, if any, you learned by using this tool.",
-          "required": true
+          "title": "Please list the new information, (if any) you learned by using this tool.",
+          "isRequired": false
         },
         {
           "type": "text",
           "name": "A1_Q3",
-          "title": "Please list the information you already knew, if any, that the tool told you.",
-          "required": true
+          "title": "Please list the information you already knew, (if any) that the tool told you.",
+          "isRequired": false
         },
         {
           "type": "text",
           "name": "A1_Q4",
-          "title": "Please list the surprising information, if any, that the tool told you.",
-          "required": true
+          "title": "Please list the surprising information, (if any) that the tool told you.",
+          "isRequired": false
         },
         {
           "type": "text",
           "name": "A1_Q5",
           "title": "What questions, if any, do you have about what you saw in the tool?",
-          "required": true
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "A2",
+      "title": "Experience of using the extension [ADA-specific]",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A2_T1",
+          "html": "<p>Next we would like to understand your thoughts, awareness, and comfort around Google Activity data after using our designed personalised dashboard (ADA) for a week.</p>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q1",
+          "title": "Compared to before your weeklong usage of ADA, how would you describe your overall awareness of what Google stores about your activity?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Much lower",
+            "Slightly lower",
+            "No change",
+            "Slightly higher",
+            "Much higher"
+          ]
+        },
+        {
+          "type": "html",
+          "name": "A2_T2",
+"html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Please rate your agreement with each statement below, grouped into four areas:</p><div style=\"display:flex; gap:10px; margin-bottom:12px;\"><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">System Quality</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Ease of Use &amp; Interaction Experience</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Perceived Usefulness</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Privacy &amp; Trust</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\">On a scale of 1 to 5, where <strong>1</strong> indicates &ldquo;Strongly disagree&rdquo; and <strong>5</strong> indicates &ldquo;Strongly agree.&rdquo;</p></div>"
+
+        },
+        {
+          "type": "matrix",
+          "name": "A2_Q2",
+          "title": "System Quality (Data, Recommendations & Clarity)",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": 1,
+              "text": "1 (Strongly disagree)"
+            },
+            {
+              "value": 2,
+              "text": "2"
+            },
+            {
+              "value": 3,
+              "text": "3"
+            },
+            {
+              "value": 4,
+              "text": "4"
+            },
+            {
+              "value": 5,
+              "text": "5 (Strongly agree)"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q2_1_accurate",
+              "text": "The activity information shown in ADA regarding my activities felt accurate."
+            },
+            {
+              "value": "A2_Q2_2_reliable",
+              "text": "The activity information shown in ADA regarding my activities felt reliable."
+            },
+            {
+              "value": "A2_Q2_3_matches_idea",
+              "text": "The activity information provided by the extension matches my idea of how sensitive my browser interactions are."
+            },
+            {
+              "value": "A2_Q2_4_understand_marking",
+              "text": "I understand why ADA marked certain entries as more sensitive than the others."
+            }
+          ]
+        },
+        {
+          "type": "matrix",
+          "name": "A2_Q3",
+          "title": "Ease of Use & Interaction Experience",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": 1,
+              "text": "1 (Strongly disagree)"
+            },
+            {
+              "value": 2,
+              "text": "2"
+            },
+            {
+              "value": 3,
+              "text": "3"
+            },
+            {
+              "value": 4,
+              "text": "4"
+            },
+            {
+              "value": 5,
+              "text": "5 (Strongly agree)"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q3_1_easy_navigate",
+              "text": "The extension is easy to navigate."
+            },
+            {
+              "value": "A2_Q3_2_easy_interact",
+              "text": "The extension is easy to interact with."
+            },
+            {
+              "value": "A2_Q3_3_easy_understand_info",
+              "text": "The activity information provided by the extension is easy for me to understand."
+            },
+            {
+              "value": "A2_Q3_4_easy_understand_order",
+              "text": "The order in which the recommendations are presented by the browser is easy for me to understand."
+            },
+            {
+              "value": "A2_Q3_5_overall_easy",
+              "text": "The extension was overall presented in a way that was easy for me to understand."
+            }
+          ]
+        },
+        {
+          "type": "matrix",
+          "name": "A2_Q4",
+          "title": "Perceived Usefulness",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": 1,
+              "text": "1 (Strongly disagree)"
+            },
+            {
+              "value": 2,
+              "text": "2"
+            },
+            {
+              "value": 3,
+              "text": "3"
+            },
+            {
+              "value": 4,
+              "text": "4"
+            },
+            {
+              "value": 5,
+              "text": "5 (Strongly agree)"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q4_1_quick_sensitivity",
+              "text": "ADA helped me understand the potential 'sensitivity' of my data quickly."
+            },
+            {
+              "value": "A2_Q4_2_noticed_unaware",
+              "text": "ADA helped me notice things about my Google activity that I was not aware of before."
+            },
+            {
+              "value": "A2_Q4_3_manage_data",
+              "text": "Using this extension would help me better manage my browsing data."
+            },
+            {
+              "value": "A2_Q4_4_remove_sensitive",
+              "text": "Using this extension would improve to remove sensitive data from being shipped to google."
+            },
+            {
+              "value": "A2_Q4_5_open_to_using",
+              "text": "I would be open to using this extension in my day-to-day life."
+            },
+            {
+              "value": "A2_Q4_6_trust_dashboard",
+              "text": "I trust the personalized dashboard provided by the system."
+            },
+            {
+              "value": "A2_Q4_7_helps_decide_delete",
+              "text": "The personalized dashboard helps me decide which activities to delete."
+            }
+          ]
+        },
+        {
+          "type": "matrix",
+          "name": "A2_Q5",
+          "title": "Privacy & Trust",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": 1,
+              "text": "1 (Strongly disagree)"
+            },
+            {
+              "value": 2,
+              "text": "2"
+            },
+            {
+              "value": 3,
+              "text": "3"
+            },
+            {
+              "value": 4,
+              "text": "4"
+            },
+            {
+              "value": 5,
+              "text": "5 (Strongly agree)"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q5_1_handled_privately",
+              "text": "I trust that ADA handled all my data privately on my device."
+            },
+            {
+              "value": "A2_Q5_2_felt_safe",
+              "text": "Knowing my data never left my device made me feel safe using ADA."
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "AC_2",
+          "title": "Please select \"Disagree\" for this statement so that we know you are reading carefully.",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Strongly agree",
+            "Agree",
+            "Neither agree nor disagree",
+            "Disagree",
+            "Strongly disagree"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q6",
+          "title": "How did you feel using ADA by the end of the 7-day period?",
+          "isRequired": true,
+          "colCount": 5,
+          "choices": [
+            "Very comfortable",
+            "Slightly comfortable",
+            "Neither comfortable nor uncomfortable",
+            "Slightly uncomfortable",
+            "Very uncomfortable"
+          ]
+        },
+        {
+          "type": "html",
+          "name": "A2_T3",
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Over the past week, ADA ranked and re-ordered your activity items. Thinking about how the tool <strong>ordered your activity items</strong> — please rate your agreement with each statement below, grouped into three areas:</p><div style=\"display:flex; gap:10px; margin-bottom:12px;\"><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Agreement</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Stability</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Trust and responsiveness</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\"><strong>Answer choices for all questions in this section:</strong> Strongly agree &middot; Agree &middot; Neither agree nor disagree &middot; Disagree &middot; Strongly disagree</p></div>"
+        },
+        {
+          "type": "matrix",
+          "name": "A2_Q7",
+          "title": "Agreement",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "40%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": "strongly_agree",
+              "text": "Strongly agree"
+            },
+            {
+              "value": "agree",
+              "text": "Agree"
+            },
+            {
+              "value": "neither",
+              "text": "Neither agree nor disagree"
+            },
+            {
+              "value": "disagree",
+              "text": "Disagree"
+            },
+            {
+              "value": "strongly_disagree",
+              "text": "Strongly disagree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q7_1_top_items_sensitive",
+              "text": "The items the tool put at the top were the ones I also consider most sensitive."
+            },
+            {
+              "value": "A2_Q7_2_ordering_reflected_me",
+              "text": "The tool's ordering of the activity items reflected what matters to me personally."
+            },
+            {
+              "value": "A2_Q7_3_ordering_same_for_anyone",
+              "text": "The tool's ordering of the activity items seemed like it would be the same for anyone."
+            }
+          ]
+        },
+        {
+          "type": "matrix",
+          "name": "A2_Q8",
+          "title": "Stability",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "40%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": "strongly_agree",
+              "text": "Strongly agree"
+            },
+            {
+              "value": "agree",
+              "text": "Agree"
+            },
+            {
+              "value": "neither",
+              "text": "Neither agree nor disagree"
+            },
+            {
+              "value": "disagree",
+              "text": "Disagree"
+            },
+            {
+              "value": "strongly_disagree",
+              "text": "Strongly disagree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q8_1_consistent_ordering",
+              "text": "The tool's ordering of the activity items stayed consistent over the week."
+            },
+            {
+              "value": "A2_Q8_2_changes_made_sense",
+              "text": "When the ordering of the activity items changed, the changes made sense to me."
+            },
+            {
+              "value": "A2_Q8_3_changed_too_often",
+              "text": "The ordering of the activity items changed more often than I would have liked."
+            }
+          ]
+        },
+        {
+          "type": "matrix",
+          "name": "A2_Q9",
+          "title": "Trust and responsiveness",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "40%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": "strongly_agree",
+              "text": "Strongly agree"
+            },
+            {
+              "value": "agree",
+              "text": "Agree"
+            },
+            {
+              "value": "neither",
+              "text": "Neither agree nor disagree"
+            },
+            {
+              "value": "disagree",
+              "text": "Disagree"
+            },
+            {
+              "value": "strongly_disagree",
+              "text": "Strongly disagree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A2_Q9_1_adjusted_over_time",
+              "text": "The tool seemed to adjust to me (became more personalised) over the course of the week."
+            },
+            {
+              "value": "A2_Q9_2_predictable",
+              "text": "I could predict how the tool would treat a new item of my activity."
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A2_Q10",
+          "title": "Did you notice the tool's ordering change at any point during the week?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": ["Yes", "No", "Not sure"]
+        },
+        {
+          "type": "comment",
+          "name": "A2_Q10_B1",
+          "title": "In your own words, what changed, and what did you make of it?",
+          "isRequired": false,
+          "rows": 3,
+          "visibleIf": "{A2_Q10} = 'Yes'"
         }
       ]
     },
@@ -186,13 +608,262 @@
     },
     {
       "name": "A4",
-      "title": "TBD",
-      "elements": [{}]
+      "title": "Comfort with Activity Data Entries",
+      "elements": [
+        {
+          "type": "html",
+          "name": "<p style=\"margin:0;\">In this section, we would like you to reflect on a few activity items that you came across while using ADA during the past 7 days. You will select items that you personally found surprising, sensitive, or memorable during your usage. For each item, we will ask you a few questions to understand your perceptions, comfort levels, and privacy expectations.</p>"
+        },
+        {
+          "type": "html",
+          "name": "A4_T2",
+          "html": "<p>Think of <strong>3 activity items</strong> from your Google Activity history that you personally find sensitive. Please keep them in mind as you answer the questions below for each one. <strong>Do not type or describe the entries themselves anywhere in this survey.</strong></p>"
+        },
+
+        {
+          "type": "html",
+          "name": "A4_T3",
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:10px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0;\"><strong>Entry 1</strong> — with regard to this entry:</p></div>"
+        },
+        {
+          "type": "matrix",
+          "name": "A4_Q1",
+          "title": "How comfortable would you feel in each of the following situations?",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": "very_comfortable", "text": "Very comfortable" },
+            { "value": "slightly_comfortable", "text": "Slightly comfortable" },
+            {
+              "value": "neither",
+              "text": "Neither comfortable nor uncomfortable"
+            },
+            {
+              "value": "slightly_uncomfortable",
+              "text": "Slightly uncomfortable"
+            },
+            { "value": "very_uncomfortable", "text": "Very uncomfortable" }
+          ],
+          "rows": [
+            {
+              "value": "A4_Q1_1_intimate",
+              "text": "How comfortable would you feel if someone in your intimate relations (such as close friends, lovers, children, and close family members) knew about this entry?"
+            },
+            {
+              "value": "A4_Q1_2_personal",
+              "text": "How comfortable would you feel if someone in your personal relations (such as friends and associates) knew about it?"
+            },
+            {
+              "value": "A4_Q1_3_social",
+              "text": "How comfortable would you feel if someone in your social relations (such as strangers and new acquaintances) knew about it?"
+            },
+            {
+              "value": "A4_Q1_4_public",
+              "text": "How comfortable would you feel if someone in your public relations (such as people you see in public places but don't know) knew about it?"
+            },
+            {
+              "value": "A4_Q1_5_google_consent",
+              "text": "If Google asked for your consent before collecting this detail of the entry, how comfortable would you feel sharing it with Google?"
+            }
+          ]
+        },
+
+        {
+          "type": "html",
+          "name": "A4_T4",
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:10px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0;\"><strong>Entry 2</strong> — with regard to this entry:</p></div>"
+        },
+        {
+          "type": "matrix",
+          "name": "A4_Q2",
+          "title": "How comfortable would you feel in each of the following situations?",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": "very_comfortable", "text": "Very comfortable" },
+            { "value": "slightly_comfortable", "text": "Slightly comfortable" },
+            {
+              "value": "neither",
+              "text": "Neither comfortable nor uncomfortable"
+            },
+            {
+              "value": "slightly_uncomfortable",
+              "text": "Slightly uncomfortable"
+            },
+            { "value": "very_uncomfortable", "text": "Very uncomfortable" }
+          ],
+          "rows": [
+            {
+              "value": "A4_Q2_1_intimate",
+              "text": "How comfortable would you feel if someone in your intimate relations (such as close friends, lovers, children, and close family members) knew about this entry?"
+            },
+            {
+              "value": "A4_Q2_2_personal",
+              "text": "How comfortable would you feel if someone in your personal relations (such as friends and associates) knew about it?"
+            },
+            {
+              "value": "A4_Q2_3_social",
+              "text": "How comfortable would you feel if someone in your social relations (such as strangers and new acquaintances) knew about it?"
+            },
+            {
+              "value": "A4_Q2_4_public",
+              "text": "How comfortable would you feel if someone in your public relations (such as people you see in public places but don't know) knew about it?"
+            },
+            {
+              "value": "A4_Q2_5_google_consent",
+              "text": "If Google asked for your consent before collecting this detail of the entry, how comfortable would you feel sharing it with Google?"
+            }
+          ]
+        },
+
+        {
+          "type": "html",
+          "name": "A4_T5",
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:10px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0;\"><strong>Entry 3</strong> — with regard to this entry:</p></div>"
+        },
+        {
+          "type": "matrix",
+          "name": "A4_Q3",
+          "title": "How comfortable would you feel in each of the following situations?",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            { "value": "very_comfortable", "text": "Very comfortable" },
+            { "value": "slightly_comfortable", "text": "Slightly comfortable" },
+            {
+              "value": "neither",
+              "text": "Neither comfortable nor uncomfortable"
+            },
+            {
+              "value": "slightly_uncomfortable",
+              "text": "Slightly uncomfortable"
+            },
+            { "value": "very_uncomfortable", "text": "Very uncomfortable" }
+          ],
+          "rows": [
+            {
+              "value": "A4_Q3_1_intimate",
+              "text": "How comfortable would you feel if someone in your intimate relations (such as close friends, lovers, children, and close family members) knew about this entry?"
+            },
+            {
+              "value": "A4_Q3_2_personal",
+              "text": "How comfortable would you feel if someone in your personal relations (such as friends and associates) knew about it?"
+            },
+            {
+              "value": "A4_Q3_3_social",
+              "text": "How comfortable would you feel if someone in your social relations (such as strangers and new acquaintances) knew about it?"
+            },
+            {
+              "value": "A4_Q3_4_public",
+              "text": "How comfortable would you feel if someone in your public relations (such as people you see in public places but don't know) knew about it?"
+            },
+            {
+              "value": "A4_Q3_5_google_consent",
+              "text": "If Google asked for your consent before collecting this detail of the entry, how comfortable would you feel sharing it with Google?"
+            }
+          ]
+        },
+
+        {
+          "type": "radiogroup",
+          "name": "A4_Q4",
+          "title": "Which of the following privacy policies would you prefer to manage the privacy of similar entries of your Google activity data (e.g., searches, browsing history, app activity, YouTube history) in the future?",
+          "isRequired": true,
+          "choices": [
+            "Give consent to Google to collect and store all activity data indefinitely, until I choose to delete it",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 3 months",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 18 months",
+            "Store all activity data only on my device, allow required computations to run on-device, and share only aggregated results with Google instead of full data",
+            "Do not give consent to Google to collect or store any of my activity data, and delete any data currently stored by Google immediately",
+            "None of the above"
+          ]
+        }
+      ]
     },
     {
       "name": "A5",
       "title": "Post-Usage Intended Behaviors",
-      "elements": [{}]
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "A5_Q1",
+          "title": "Compared to before you used the tool, how likely are you to do each of the following now?",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "60%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": "much_more_likely",
+              "text": "Much more likely"
+            },
+            {
+              "value": "more_likely",
+              "text": "More likely"
+            },
+            {
+              "value": "somewhat_more_likely",
+              "text": "Somewhat more likely"
+            },
+            {
+              "value": "about_the_same",
+              "text": "About the same as before"
+            },
+            {
+              "value": "somewhat_less_likely",
+              "text": "Somewhat less likely"
+            },
+            {
+              "value": "less_likely",
+              "text": "Less likely"
+            },
+            {
+              "value": "much_less_likely",
+              "text": "Much less likely"
+            },
+            {
+              "value": "dont_know",
+              "text": "Don't know"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A5_Q1_1_seek_info",
+              "text": "Seek out more information about how companies store your activity"
+            },
+            {
+              "value": "A5_Q1_2_review_history",
+              "text": "Review your Google activity history"
+            },
+            {
+              "value": "A5_Q1_3_delete_items",
+              "text": "Delete items from your activity history"
+            },
+            {
+              "value": "A5_Q1_4_pause_control",
+              "text": "Turn off or pause an Activity Control"
+            },
+            {
+              "value": "A5_Q1_5_auto_delete",
+              "text": "Set your activity to auto-delete after a fixed period"
+            },
+            {
+              "value": "A5_Q1_6_incognito",
+              "text": "Use Incognito mode or browse signed out"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "A6",
@@ -311,6 +982,286 @@
               "text": "If a tool gives me clear insights about sensitive data, I am more likely to use it regularly, even if it requires some effort from my side."
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "A7",
+      "title": "Opinions about Activity Collection and Personalization",
+      "elements": [
+        {
+          "type": "html",
+          "name": "A3_T1",
+          "html": "<p>The following section repeats some of the questions you answered in the pre-usage part of this study. This is intentional: we would like to understand whether, and how, your opinions may have changed after using ADA for the past week. As before, during the rest of this survey, we use the term 'activity data' to refer to the records a company (e.g., Google) keeps of what you searched for, watched, visited, or did while using its services.</p>"
+        },
+        {
+          "type": "matrix",
+          "name": "A7_Q1",
+          "title": "Please indicate how much you agree or disagree with each of the following statements.",
+          "rowTitleWidth": "70%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "columns": [
+            {
+              "value": "strongly_agree",
+              "text": "Strongly agree"
+            },
+            {
+              "value": "agree",
+              "text": "Agree"
+            },
+            {
+              "value": "neutral",
+              "text": "Neither agree nor disagree"
+            },
+            {
+              "value": "disagree",
+              "text": "Disagree"
+            },
+            {
+              "value": "strongly_disagree",
+              "text": "Strongly disagree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A7_Q1_1_want_personalization",
+              "text": "I would like the services I use to be personalized based on my past activity, as opposed to being the same for everyone."
+            },
+            {
+              "value": "A7_Q1_2_comfortable_record",
+              "text": "I would be comfortable with a company keeping a record of what I search for and watch."
+            },
+            {
+              "value": "A7_Q1_3_want_transparency_system",
+              "text": "If it were available, I would like to use a system that shows me what activity data has been collected about me."
+            },
+            {
+              "value": "A7_Q1_4_adequate_explanation",
+              "text": "I feel that companies adequately explain what they keep in my activity history."
+            },
+            {
+              "value": "A7_Q1_5_understand_retention",
+              "text": "I feel that I understand how companies decide what to keep in my activity history."
+            },
+            {
+              "value": "A7_Q1_6_fair_to_store",
+              "text": "I would consider it fair for a company to store my activity in order to personalize the services I use."
+            },
+            {
+              "value": "A7_Q1_7_creepy_to_store",
+              "text": "I would consider it creepy for a company to store my activity in order to personalize the services I use."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A8",
+      "title": "Knowledge Certainty and Facts",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "A*_Q1",
+          "title": "What pieces of activity data do you think Google collects when you use your Google Account on multiple devices? (Select all that apply)",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": [
+            "Search queries typed or spoken",
+            "Websites visited in Chrome",
+            "YouTube watch and search history",
+            "Date of activity",
+            "Time of activity",
+            "Approximate location at the time of activity",
+            "Device used (e.g., phone, laptop, tablet)",
+            "App activity and usage details",
+            "Interactions with ads (e.g., ads viewed or clicked)",
+            "Data shared with third-party apps using Google login"
+          ],
+          "hasOther": true,
+          "otherText": "Other (please specify)",
+          "showNoneItem": true,
+          "noneText": "I don’t think Google collects data across services"
+        },
+        {
+          "type": "matrix",
+          "name": "A8_Q2",
+          "title": "Imagine a regular Google user with a normal account, using Google services with the default settings. How likely or unlikely do you expect it is that Google retains a record of the following?",
+          "isRequired": true,
+          "isAllRowRequired": true,
+          "rowTitleWidth": "50%",
+          "alternateRows": true,
+          "verticalAlign": "middle",
+          "columns": [
+            {
+              "value": "very_likely",
+              "text": "Very likely"
+            },
+            {
+              "value": "likely",
+              "text": "Likely"
+            },
+            {
+              "value": "somewhat_likely",
+              "text": "Somewhat likely"
+            },
+            {
+              "value": "neutral",
+              "text": "Neither likely nor unlikely"
+            },
+            {
+              "value": "somewhat_unlikely",
+              "text": "Somewhat unlikely"
+            },
+            {
+              "value": "unlikely",
+              "text": "Unlikely"
+            },
+            {
+              "value": "very_unlikely",
+              "text": "Very unlikely"
+            }
+          ],
+          "rows": [
+            {
+              "value": "A8_Q2_1_search_text",
+              "text": "The text of every search they have typed"
+            },
+            {
+              "value": "A8_Q2_2_unsubmitted_search",
+              "text": "Searches they typed but did not submit"
+            },
+            {
+              "value": "A8_Q2_3_youtube_watch",
+              "text": "Which YouTube videos they watched, and for how long"
+            },
+            {
+              "value": "A8_Q2_4_voice_recordings",
+              "text": "Voice recordings from Assistant queries"
+            },
+            {
+              "value": "A8_Q2_5_places_travelled",
+              "text": "Places they physically travelled to"
+            },
+            {
+              "value": "A8_Q2_6_contact_list",
+              "text": "Their contact list"
+            },
+            {
+              "value": "A8_Q2_7_device_colour",
+              "text": "The colour of the device they used"
+            },
+            {
+              "value": "A8_Q2_8_android_apps",
+              "text": "Which apps they opened on an Android phone"
+            },
+            {
+              "value": "A8_Q2_9_ads_clicked",
+              "text": "Ads they clicked"
+            },
+            {
+              "value": "A8_Q2_10_signed_out_searches",
+              "text": "Searches made while signed out"
+            },
+            {
+              "value": "A8_Q2_11_incognito_searches",
+              "text": "Searches made in Incognito mode"
+            },
+            {
+              "value": "A8_Q2_12_email_content",
+              "text": "The content of their emails"
+            },
+            {
+              "value": "A8_Q2_13_national_id",
+              "text": "Their Social Security / national ID number"
+            },
+            {
+              "value": "A8_Q2_14_num_devices",
+              "text": "How many devices they use"
+            },
+            {
+              "value": "A8_Q2_15_email_purchases",
+              "text": "Purchases confirmed by email"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "A8_Q3",
+          "title": "In the last week, about how many searches do you think you made on Google?",
+          "isRequired": true,
+          "inputType": "text",
+          "placeholder": "Enter a number"
+        },
+        {
+          "type": "text",
+          "name": "A8_Q4",
+          "title": "In the last week, about how many YouTube videos do you think you watched?",
+          "isRequired": true,
+          "inputType": "text",
+          "placeholder": "Enter a number"
+        },
+        {
+          "type": "text",
+          "name": "A8_Q5",
+          "title": "In the last week, about how many separate items do you think were added to your Google activity dashboard?",
+          "isRequired": true,
+          "inputType": "text",
+          "placeholder": "Enter a number"
+        },
+        {
+          "type": "slider",
+          "name": "A8_Q6",
+          "title": "Of the items in your Google activity history, about what percentage do you think are still stored from more than a year ago?",
+          "description": "0% = none of them; 100% = all of them.",
+          "isRequired": true,
+          "min": 0,
+          "max": 100,
+          "step": 1
+        },
+        {
+          "type": "radiogroup",
+          "name": "A8_Q7",
+          "title": "Which of the following privacy approaches would you prefer for managing your Google activity data (e.g., searches, browsing history, app activity, YouTube history) in the future?",
+          "isRequired": true,
+          "colCount": 1,
+          "choices": [
+            "Give consent to Google to collect and store all activity data indefinitely, until I choose to delete it",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 3 months",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 18 months",
+            "Store all activity data only on my device, allow required computations to run on-device, and share only aggregated results with Google instead of full data",
+            "Do not give consent to Google to collect or store any of my activity data, and delete any data currently stored by Google immediately",
+            "None of the above"
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "A8_Q8",
+          "title": "Do you believe that Google ensures the security of the activity data it stores?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": ["Yes", "No", "I am not sure"]
+        },
+        {
+          "type": "rating",
+          "name": "A8_Q9",
+          "title": "On a scale of 1 to 5, with 1 being the least and 5 being the most, how much do you trust Google not to misuse your activity data?",
+          "isRequired": true,
+          "rateCount": 5,
+          "rateMin": 1,
+          "rateMax": 5,
+          "minRateDescription": "1 = Least",
+          "maxRateDescription": "5 = Most"
+        },
+        {
+          "type": "radiogroup",
+          "name": "A8_Q10",
+          "title": "Do you think that you can access your activity data collected by Google?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": ["Yes", "No", "Maybe"]
         }
       ]
     },
@@ -481,5 +1432,5 @@
       ]
     }
   ],
-  "completedHtml": "<div>Thank you for taking part in the survey. </div>"
+  "completedHtml": "<div style='text-align:center;'><a href='https://www.prolific.co' target='_blank' rel='noopener noreferrer'>Return to Prolific</a></div><p style='margin:16px 0 0 0; opacity:0.8;'>Thank you again for taking part.</p></div>"
 }
