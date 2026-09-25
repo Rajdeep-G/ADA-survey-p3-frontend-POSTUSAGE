@@ -24,19 +24,19 @@
         {
           "type": "text",
           "name": "A1_Q2",
-          "title": "Please list the new information, (if any) you learned by using this tool.",
+          "title": "Please list anything new you learned by using this tool.",
           "isRequired": false
         },
         {
           "type": "text",
           "name": "A1_Q3",
-          "title": "Please list the information you already knew, (if any) that the tool told you.",
+          "title": "Please list anything the tool told you that you already knew.",
           "isRequired": false
         },
         {
           "type": "text",
           "name": "A1_Q4",
-          "title": "Please list the surprising information, (if any) that the tool told you.",
+          "title": "Please list anything the tool showed you that surprised you.",
           "isRequired": false
         },
         {
@@ -49,7 +49,7 @@
     },
     {
       "name": "A2",
-      "title": "Experience of using the extension [ADA-specific]",
+      "title": "Experience of using the extension over the past week",
       "elements": [
         {
           "type": "html",
@@ -73,7 +73,7 @@
         {
           "type": "html",
           "name": "A2_T2",
-          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Please rate your agreement with each statement below, grouped into four areas:</p><div style=\"display:flex; gap:10px; margin-bottom:12px;\"><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">System Quality</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Ease of Use &amp; Interaction Experience</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Perceived Usefulness</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Privacy &amp; Trust</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\">On a scale of 1 to 5, where <strong>1</strong> indicates &ldquo;Strongly disagree&rdquo; and <strong>5</strong> indicates &ldquo;Strongly agree.&rdquo;</p></div>"
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Please rate your agreement with each statement below, grouped into four areas:</p><div style=\"display:flex; margin-bottom:12px; border-top:1px solid #c7d2fe; border-bottom:1px solid #c7d2fe; padding:10px 0;\"><div style=\"flex:1; text-align:center; font-weight:600; color:#4338ca; border-right:1px solid #c7d2fe;\">System Quality</div><div style=\"flex:1; text-align:center; font-weight:600; color:#4338ca; border-right:1px solid #c7d2fe;\">Ease of Use &amp; Interaction Experience</div><div style=\"flex:1; text-align:center; font-weight:600; color:#4338ca; border-right:1px solid #c7d2fe;\">Perceived Usefulness</div><div style=\"flex:1; text-align:center; font-weight:600; color:#4338ca;\">Privacy &amp; Trust</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\">On a scale of 1 to 5, where <strong>1</strong> indicates &ldquo;Strongly disagree&rdquo; and <strong>5</strong> indicates &ldquo;Strongly agree.&rdquo;</p></div>"
         },
         {
           "type": "matrix",
@@ -312,15 +312,31 @@
           ]
         },
         {
+          "type": "radiogroup",
+          "name": "A2_Q10",
+          "title": "Did you notice the tool's ordering change at any point during the week?",
+          "isRequired": true,
+          "colCount": 3,
+          "choices": ["Yes", "No", "Not sure"]
+        },
+        {
+          "type": "comment",
+          "name": "A2_Q10_B1",
+          "title": "In your own words, what changed, and what did you make of it?",
+          "isRequired": false,
+          "rows": 3,
+          "visibleIf": "{A2_Q10} = 'Yes'"
+        },
+        {
           "type": "html",
           "name": "A2_T3",
-          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Over the past week, ADA ranked and re-ordered your activity items. Thinking about how the tool <strong>ordered your activity items</strong> — please rate your agreement with each statement below, grouped into three areas:</p><div style=\"display:flex; gap:10px; margin-bottom:12px;\"><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Agreement</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Stability</div><div style=\"flex:1; background:#ffffff; border:1px solid #c7d2fe; border-radius:6px; padding:8px 10px; text-align:center; font-weight:600; color:#4338ca;\">Trust and responsiveness</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\"><strong>Answer choices for all questions in this section:</strong> Strongly agree &middot; Agree &middot; Neither agree nor disagree &middot; Disagree &middot; Strongly disagree</p></div>"
+          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:12px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0 0 12px;\">Over the past week, ADA ranked and re-ordered your activity items. Thinking about how the tool <strong>ordered your activity items</strong> — please rate your agreement with each statement below, grouped into three areas:</p><div style=\"display:flex; margin-bottom:12px; border-top:1px solid #c7d2fe; border-bottom:1px solid #c7d2fe; padding:10px 0;\"><div style=\"flex:1; text-align:center; font-weight:600; color:#4338ca; border-right:1px solid #c7d2fe;\">Relative ordering</div><div style=\"flex:1; text-align:center; font-weight:600; color:#4338ca; border-right:1px solid #c7d2fe;\">Stability</div><div style=\"flex:1; text-align:center; font-weight:600; color:#4338ca;\">Trust and responsiveness</div></div><p style=\"margin:0; font-size:0.9em; color:#555;\"><strong>Answer choices for all questions in this section:</strong> Strongly agree &middot; Agree &middot; Neither agree nor disagree &middot; Disagree &middot; Strongly disagree</p></div>"
         },
 
         {
           "type": "matrix",
           "name": "A2_Q7",
-          "title": "Agreement",
+          "title": "Relative Ordering",
           "isRequired": true,
           "isAllRowRequired": true,
           "rowTitleWidth": "40%",
@@ -450,22 +466,6 @@
               "text": "I could predict how the tool would treat a new item of my activity."
             }
           ]
-        },
-        {
-          "type": "radiogroup",
-          "name": "A2_Q10",
-          "title": "Did you notice the tool's ordering change at any point during the week?",
-          "isRequired": true,
-          "colCount": 3,
-          "choices": ["Yes", "No", "Not sure"]
-        },
-        {
-          "type": "comment",
-          "name": "A2_Q10_B1",
-          "title": "In your own words, what changed, and what did you make of it?",
-          "isRequired": false,
-          "rows": 3,
-          "visibleIf": "{A2_Q10} = 'Yes'"
         }
       ]
     },
@@ -485,8 +485,8 @@
           "isRequired": true,
           "choices": [
             "Store all activity data and other attributes (e.g. sensitivity feedback) locally on my device indefinitely, until I choose to delete them",
-            "Store all activity data locally, but auto-delete items older than 3 months",
             "Store all activity data locally, but auto-delete items older than 18 months",
+            "Store all activity data locally, but auto-delete items older than 3 months",
             "Do not store any activity data after sensitivity is shown — delete immediately after analysis",
             "I would prefer an option where the model learns but keeps no history of my data"
           ],
@@ -617,14 +617,10 @@
         {
           "type": "html",
           "name": "A4_T2",
-          "html": "<p>Think of <strong>3 activity items</strong> from your Google Activity history that you personally find sensitive. Please keep them in mind as you answer the questions below for each one. <strong>Do not type or describe the entries themselves anywhere in this survey.</strong></p>"
+          "html": "<p>Think of <strong>3-5 activity items</strong> from your Google Activity history that you personally find sensitive. Please keep them in mind as you answer the questions below. <strong>Do not type or describe the entries themselves anywhere in this survey.</strong></p>"
         },
 
-        {
-          "type": "html",
-          "name": "A4_T3",
-          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:10px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0;\"><strong>Entry 1</strong> — with regard to this entry:</p></div>"
-        },
+
         {
           "type": "matrix",
           "name": "A4_Q1",
@@ -671,123 +667,10 @@
           ]
         },
         {
-          "type": "html",
-          "name": "AC_2_T",
-          "html": "<div style=\"border:1px solid #333; border-radius:4px; padding:14px 16px;\"><p style=\"margin:0 0 10px;\">The following question is to verify that you are a real person.</p><p style=\"margin:0;\">Please enter the word <strong>purple</strong> into the box below.</p></div>"
-        },
-        {
           "type": "text",
           "name": "AC_2",
-          "title": " ",
-          "isRequired": true,
-          "validators": [
-            {
-              "type": "expression",
-              "text": "Please enter the word \"purple\" exactly as shown.",
-              "expression": "{AC_2} = 'purple'"
-            }
-          ]
-        },
-        {
-          "type": "html",
-          "name": "A4_T4",
-          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:10px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0;\"><strong>Entry 2</strong> — with regard to this entry:</p></div>"
-        },
-        {
-          "type": "matrix",
-          "name": "A4_Q2",
-          "title": "How comfortable would you feel in each of the following situations?",
-          "isRequired": true,
-          "isAllRowRequired": true,
-          "rowTitleWidth": "50%",
-          "alternateRows": true,
-          "verticalAlign": "middle",
-          "columns": [
-            { "value": "very_comfortable", "text": "Very comfortable" },
-            { "value": "slightly_comfortable", "text": "Slightly comfortable" },
-            {
-              "value": "neither",
-              "text": "Neither comfortable nor uncomfortable"
-            },
-            {
-              "value": "slightly_uncomfortable",
-              "text": "Slightly uncomfortable"
-            },
-            { "value": "very_uncomfortable", "text": "Very uncomfortable" }
-          ],
-          "rows": [
-            {
-              "value": "A4_Q2_1_intimate",
-              "text": "How comfortable would you feel if someone in your intimate relations (such as close friends, lovers, children, and close family members) knew about this entry?"
-            },
-            {
-              "value": "A4_Q2_2_personal",
-              "text": "How comfortable would you feel if someone in your personal relations (such as friends and associates) knew about it?"
-            },
-            {
-              "value": "A4_Q2_3_social",
-              "text": "How comfortable would you feel if someone in your social relations (such as strangers and new acquaintances) knew about it?"
-            },
-            {
-              "value": "A4_Q2_4_public",
-              "text": "How comfortable would you feel if someone in your public relations (such as people you see in public places but don't know) knew about it?"
-            },
-            {
-              "value": "A4_Q2_5_google_consent",
-              "text": "If Google asked for your consent before collecting this detail of the entry, how comfortable would you feel sharing it with Google?"
-            }
-          ]
-        },
-
-        {
-          "type": "html",
-          "name": "A4_T5",
-          "html": "<div style=\"background:#f0f4ff; border-left:4px solid #4f46e5; padding:10px 16px; border-radius:6px; margin-bottom:8px;\"><p style=\"margin:0;\"><strong>Entry 3</strong> — with regard to this entry:</p></div>"
-        },
-        {
-          "type": "matrix",
-          "name": "A4_Q3",
-          "title": "How comfortable would you feel in each of the following situations?",
-          "isRequired": true,
-          "isAllRowRequired": true,
-          "rowTitleWidth": "50%",
-          "alternateRows": true,
-          "verticalAlign": "middle",
-          "columns": [
-            { "value": "very_comfortable", "text": "Very comfortable" },
-            { "value": "slightly_comfortable", "text": "Slightly comfortable" },
-            {
-              "value": "neither",
-              "text": "Neither comfortable nor uncomfortable"
-            },
-            {
-              "value": "slightly_uncomfortable",
-              "text": "Slightly uncomfortable"
-            },
-            { "value": "very_uncomfortable", "text": "Very uncomfortable" }
-          ],
-          "rows": [
-            {
-              "value": "A4_Q3_1_intimate",
-              "text": "How comfortable would you feel if someone in your intimate relations (such as close friends, lovers, children, and close family members) knew about this entry?"
-            },
-            {
-              "value": "A4_Q3_2_personal",
-              "text": "How comfortable would you feel if someone in your personal relations (such as friends and associates) knew about it?"
-            },
-            {
-              "value": "A4_Q3_3_social",
-              "text": "How comfortable would you feel if someone in your social relations (such as strangers and new acquaintances) knew about it?"
-            },
-            {
-              "value": "A4_Q3_4_public",
-              "text": "How comfortable would you feel if someone in your public relations (such as people you see in public places but don't know) knew about it?"
-            },
-            {
-              "value": "A4_Q3_5_google_consent",
-              "text": "If Google asked for your consent before collecting this detail of the entry, how comfortable would you feel sharing it with Google?"
-            }
-          ]
+          "title": "The following question is to verify that you are a real person. Please enter the word \"purple\" into the box below.",
+          "isRequired": true
         },
 
         {
@@ -797,8 +680,8 @@
           "isRequired": true,
           "choices": [
             "Give consent to Google to collect and store all activity data indefinitely, until I choose to delete it",
-            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 3 months",
             "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 18 months",
+            "Give consent to Google to collect and store all activity data, but require Google to delete any data older than 3 months",
             "Store all activity data only on my device, allow required computations to run on-device, and share only aggregated results with Google instead of full data",
             "Do not give consent to Google to collect or store any of my activity data, and delete any data currently stored by Google immediately",
             "None of the above"
@@ -868,7 +751,7 @@
             },
             {
               "value": "A5_Q1_4_pause_control",
-              "text": "Turn off or pause an Activity Control"
+              "text": "Turn off or pause activity tracking"
             },
             {
               "value": "A5_Q1_5_auto_delete",
@@ -946,6 +829,7 @@
           "name": "AC_3",
           "title": "Please select \"Somewhat less likely\" for this item, regardless of your actual experience with computers.",
           "isRequired": true,
+          "colCount": 3,
           "choices": [
             "Much more likely",
             "More likely",
@@ -953,8 +837,7 @@
             "About the same as before",
             "Somewhat less likely",
             "Less likely",
-            "Much less likely",
-            "Don't know"
+            "Much less likely"
           ]
         },
         {
@@ -1300,21 +1183,7 @@
           "type": "text",
           "name": "AC_5",
           "title": "What is 10 divided by 5?",
-          "isRequired": true,
-          "inputType": "number",
-          "validators": [
-            {
-              "type": "numeric",
-              "text": "Please enter a number.",
-              "minValue": 0,
-              "maxValue": 20
-            },
-            {
-              "type": "expression",
-              "text": "Please double check your answer.",
-              "expression": "{AC_5} = 2"
-            }
-          ]
+          "isRequired": true
         },
         {
           "type": "radiogroup",
