@@ -314,7 +314,7 @@
         },
         {
           "type": "radiogroup",
-          "name": "A2_Q10",
+          "name": "A2_Q7",
           "title": "Did you notice the tool's ordering change at any point during the week?",
           "isRequired": true,
           "colCount": 3,
@@ -322,11 +322,11 @@
         },
         {
           "type": "comment",
-          "name": "A2_Q10_B1",
+          "name": "A2_Q7_B1",
           "title": "In your own words, what changed, and what did you make of it?",
           "isRequired": false,
           "rows": 3,
-          "visibleIf": "{A2_Q10} = 'Yes'"
+          "visibleIf": "{A2_Q7} = 'Yes'"
         },
         {
           "type": "html",
@@ -336,7 +336,7 @@
 
         {
           "type": "matrix",
-          "name": "A2_Q7",
+          "name": "A2_Q8",
           "title": "Relative Ordering",
           "isRequired": true,
           "isAllRowRequired": true,
@@ -367,22 +367,22 @@
           ],
           "rows": [
             {
-              "value": "A2_Q7_1_top_items_sensitive",
+              "value": "A2_Q8_1_top_items_sensitive",
               "text": "The items the tool put at the top were the ones I also consider most sensitive."
             },
             {
-              "value": "A2_Q7_2_ordering_reflected_me",
+              "value": "A2_Q8_2_ordering_reflected_me",
               "text": "The tool's ordering of the activity items reflected what matters to me personally."
             },
             {
-              "value": "A2_Q7_3_ordering_same_for_anyone",
+              "value": "A2_Q8_3_ordering_same_for_anyone",
               "text": "The tool's ordering of the activity items seemed like it would be the same for anyone."
             }
           ]
         },
         {
           "type": "matrix",
-          "name": "A2_Q8",
+          "name": "A2_Q9",
           "title": "Stability",
           "isRequired": true,
           "isAllRowRequired": true,
@@ -413,22 +413,22 @@
           ],
           "rows": [
             {
-              "value": "A2_Q8_1_consistent_ordering",
+              "value": "A2_Q9_1_consistent_ordering",
               "text": "The tool's ordering of the activity items stayed consistent over the week."
             },
             {
-              "value": "A2_Q8_2_changes_made_sense",
+              "value": "A2_Q9_2_changes_made_sense",
               "text": "When the ordering of the activity items changed, the changes made sense to me."
             },
             {
-              "value": "A2_Q8_3_changed_too_often",
+              "value": "A2_Q9_3_changed_too_often",
               "text": "The ordering of the activity items changed more often than I would have liked."
             }
           ]
         },
         {
           "type": "matrix",
-          "name": "A2_Q9",
+          "name": "A2_Q10",
           "title": "Trust and responsiveness",
           "isRequired": true,
           "isAllRowRequired": true,
@@ -459,11 +459,11 @@
           ],
           "rows": [
             {
-              "value": "A2_Q9_1_adjusted_over_time",
+              "value": "A2_Q10_1_adjusted_over_time",
               "text": "The tool seemed to adjust to me (became more personalised) over the course of the week."
             },
             {
-              "value": "A2_Q9_2_predictable",
+              "value": "A2_Q10_2_predictable",
               "text": "I could predict how the tool would treat a new item of my activity."
             }
           ]
@@ -521,7 +521,7 @@
           "name": "A3_Q4",
           "title": "Can you please briefly (1-3 sentences) explain your answer choice for the previous question?",
           "isRequired": true,
-          "rows": 3
+          "rows": 2
         },
 
         {
@@ -981,7 +981,7 @@
       "elements": [
         {
           "type": "checkbox",
-          "name": "A*_Q1",
+          "name": "A8_Q1",
           "title": "What pieces of activity data do you think Google collects when you use your Google Account on multiple devices? (Select all that apply)",
           "isRequired": true,
           "colCount": 3,
