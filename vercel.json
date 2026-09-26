@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/survey_post/check",       "destination": "http://134.209.215.255:8000/survey_post/check" },
+    { "source": "/survey_post/start",       "destination": "http://134.209.215.255:8000/survey_post/start" },
+    { "source": "/survey_post/progress",    "destination": "http://134.209.215.255:8000/survey_post/progress" },
+    { "source": "/survey_post/submit",      "destination": "http://134.209.215.255:8000/survey_post/submit" },
+    { "source": "/healthz",            "destination": "http://134.209.215.255:8000/healthz" }
+  ]
+}

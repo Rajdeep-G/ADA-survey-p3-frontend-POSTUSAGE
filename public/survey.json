@@ -13,7 +13,8 @@
         {
           "type": "html",
           "name": "A1_T1",
-          "html": "Please spend a few minutes exploring the tool before beginning the survey. Click the icon in your browser toolbar near the top-right corner of the browser window. Be sure to view all parts of the interface."
+          "html": "<p>Over the past week, you've been using ADA on your own. Before beginning this final survey, please open the extension once more — click the icon in your browser toolbar near the top-right corner of the browser window and take a moment to revisit all parts of the interface, just as a quick refresher.</p>"
+
         },
         {
           "type": "text",
